@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
   font-family: "Righteous", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  /* --primary: #26ae60; */
+  --primary: #ff305b;
 }
