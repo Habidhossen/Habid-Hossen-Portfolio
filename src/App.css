@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Righteous", cursive;
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
-  /* --primary: #26ae60; */
-  --primary: #ff305b;
+  --primary: #f52225;
+  --green: #1cbe59;
+  --purple: #8067f0;
+  --orange: #f75023;
+  --heading: #0f172a;
+  --text: #6f6b80;
+  --greyBg: #f7f7f7;
+  --jostFont: "Jost", sans-serif;
 }

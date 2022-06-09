@@ -6,17 +6,21 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <section className="h-screen flex">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div className="p-28 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
-          <h1 className="banner-subtitle">Hello, I am</h1>
+          <h5 className="banner-subtitle">Hello, I'm</h5>
           <h1 className="banner-title">Habid Hossen</h1>
-          <p className="banner-designation">Full Stack Web Developer</p>
-          <div className="flex">
-            <button className="about-btn">Know more</button>
-            <button className="resume-btn">
-              <FaCloudDownloadAlt /> Resume
-            </button>
-          </div>
+          <h5 className="banner-designation">
+            A <span className="greenText">Full Stack Developer</span> From{" "}
+            <span className="purpleText">Bangladesh</span>
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            obcaecati voluptatum eveniet qui ipsa cumque.
+          </p>
+          <button className="resume-btn">
+            <FaCloudDownloadAlt /> Resume
+          </button>
         </div>
         <div className="flex justify-center items-center">
           <div className="banner-img-div">
