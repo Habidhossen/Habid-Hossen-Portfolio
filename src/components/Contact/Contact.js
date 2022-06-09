@@ -1,9 +1,33 @@
-import React from "react";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import "./Contact.css";
 
-const contact = () => {
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_tkpd7cc",
+        "template_w0uj0je",
+        form.current,
+        "_sxOGFnN_t5OJ2e16"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section className="h-screen px-6 md:px-20 lg:px-28">
       <h1 className="section-title">
@@ -46,34 +70,47 @@ const contact = () => {
           </div>
         </div>
         <div className="col-span-3">
-          <div className="md:flex lg:flex gap-6">
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="md:flex lg:flex gap-6">
+              <input
+                className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mb-0 lg:mb-0"
+                type="text"
+                placeholder="Your Name"
+                name="name"
+                required
+              />
+              <input
+                className="w-full md:w-1/2 lg:w-1/2"
+                type="email"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
+            </div>
             <input
-              className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mb-0 lg:mb-0"
+              className="w-full mt-6"
               type="text"
-              placeholder="Your Name"
+              placeholder="Subject"
+              name="subject"
+              required
             />
-            <input
-              className="w-full md:w-1/2 lg:w-1/2"
-              type="email"
-              placeholder="Your Email"
-            />
-          </div>
-          <input className="w-full mt-6" type="text" placeholder="Subject" />
-          <textarea
-            className="w-full mt-6"
-            name=""
-            id=""
-            cols="30"
-            rows="6"
-            placeholder="Message"
-          ></textarea>
-          <button className="send-msg-btn">
-            Send Message <FaTelegramPlane />
-          </button>
+            <textarea
+              className="w-full mt-6"
+              name="message"
+              id=""
+              cols="30"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" className="send-msg-btn">
+              Send Message <FaTelegramPlane />
+            </button>
+          </form>
         </div>
       </div>
     </section>
   );
 };
 
-export default contact;
+export default Contact;
