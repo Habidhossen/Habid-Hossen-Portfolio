@@ -1,5 +1,10 @@
 import React from "react";
-import { FaCloudDownloadAlt } from "react-icons/fa";
+import {
+  FaCloudDownloadAlt,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import profileImg from "../../assets/images/profile-img.jpg";
 import "./Banner.css";
 
@@ -14,13 +19,47 @@ const Banner = () => {
             A <span className="greenText">Full Stack Developer</span> From{" "}
             <span className="purpleText">Bangladesh</span>
           </h5>
-          <p>
+          <p className="banner-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             obcaecati voluptatum eveniet qui ipsa cumque.
           </p>
-          <button className="resume-btn">
-            <FaCloudDownloadAlt /> Resume
-          </button>
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/habidhossen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="icon-bg">
+                <FaGithub />
+              </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/habidhossen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="icon-bg">
+                <FaLinkedin />
+              </p>
+            </a>
+            <a
+              href="https://facebook.com/habidhossen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="icon-bg">
+                <FaFacebook />
+              </p>
+            </a>
+          </div>
+          <a
+            href="https://drive.google.com/u/0/uc?id=1xrWjLAE-fspgWPeHByiF3LeOsHCbqxbo&export=download"
+            className="resume-btn"
+            rel="noreferrer"
+          >
+            <FaCloudDownloadAlt />
+            Resume
+          </a>
         </div>
         <div className="flex justify-center items-center">
           <div className="banner-img-div">
