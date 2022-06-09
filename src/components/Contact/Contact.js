@@ -1,0 +1,79 @@
+import React from "react";
+import { FaTelegramPlane } from "react-icons/fa";
+import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+import "./Contact.css";
+
+const contact = () => {
+  return (
+    <section className="h-screen px-6 md:px-20 lg:px-28">
+      <h1 className="section-title">
+        Get In <span>Touch</span>
+      </h1>
+      <div className="grid grid-cols-2 sm:grid-flow-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div className="col-span-2">
+          <h1 className="contact-heading-title">Don't be shy!</h1>
+          <p className="contact-heading-text">
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas or opportunities to be part of your
+            visions.
+          </p>
+          <div className="flex items-center">
+            <p className="bg-[#D7F9DB] text-[#1cbe59] p-4 rounded-[50px] text-3xl">
+              <MdLocationOn />
+            </p>
+            <div className="ml-6">
+              <h2 className="contact-title">Address point</h2>
+              <h3 className="contact-text">Chattogram, Bangladesh</h3>
+            </div>
+          </div>
+          <div className="flex items-center mt-4">
+            <p className="bg-[#FFE6D7] text-[#f75023] p-4 rounded-[50px] text-3xl">
+              <MdEmail />
+            </p>
+            <div className="ml-6">
+              <h2 className="contact-title">Mail me</h2>
+              <h3 className="contact-text">habidhossen2@gmail.com</h3>
+            </div>
+          </div>
+          <div className="flex items-center mt-4">
+            <p className="bg-[#DBEEF3] text-[#8067f0] p-4 rounded-[50px] text-3xl">
+              <MdPhone />
+            </p>
+            <div className="ml-6">
+              <h2 className="contact-title">Call me</h2>
+              <h3 className="contact-text">+88 01854-092871</h3>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <div className="md:flex lg:flex gap-6">
+            <input
+              className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mb-0 lg:mb-0"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              className="w-full md:w-1/2 lg:w-1/2"
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <input className="w-full mt-6" type="text" placeholder="Subject" />
+          <textarea
+            className="w-full mt-6"
+            name=""
+            id=""
+            cols="30"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+          <button className="send-msg-btn">
+            Send Message <FaTelegramPlane />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default contact;

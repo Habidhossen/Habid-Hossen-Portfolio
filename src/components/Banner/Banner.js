@@ -10,8 +10,8 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <section className="h-screen flex">
-      <div className="p-28 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+    <section className="h-screen flex px-6 md:px-20 lg:px-28">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h5 className="banner-subtitle">Hello, I'm</h5>
           <h1 className="banner-title">Habid Hossen</h1>
@@ -23,7 +23,7 @@ const Banner = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             obcaecati voluptatum eveniet qui ipsa cumque.
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <a
               href="https://github.com/habidhossen"
               target="_blank"
