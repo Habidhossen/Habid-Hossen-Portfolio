@@ -19,7 +19,7 @@ const Projects = () => {
       serverCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Server",
     },
     {
-      id: 1,
+      id: 2,
       banner: projectBanner2,
       projectTitle: "CarSpot - Wheels and Deals",
       projectDesc:
@@ -32,7 +32,7 @@ const Projects = () => {
         "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Server",
     },
     {
-      id: 1,
+      id: 3,
       banner: projectBanner3,
       projectTitle: "Travel To Go",
       projectDesc:
@@ -45,7 +45,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="h-screen px-6 md:px-20 lg:px-28">
+    <section className="min-h-screen px-6 md:px-20 lg:px-28" id="project">
       <h1 className="section-title">
         My <span>Projects</span>
       </h1>

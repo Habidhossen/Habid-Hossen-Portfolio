@@ -17,10 +17,12 @@ const ProjectCard = ({ project }) => {
       {/* project card */}
       <div className="project-card">
         <img src={banner} alt="" />
-        <div className="p-3 mt-3">
+        <div className="p-2 mt-3">
           <div className="flex gap-2 justify-center">
-            {technologies.map((tech) => (
-              <span className="project-badge">{tech}</span>
+            {technologies.map((tech, index) => (
+              <span key={index} className="project-badge">
+                {tech}
+              </span>
             ))}
           </div>
           <h1 className="project-title">{projectTitle}</h1>

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
-import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -12,19 +11,19 @@ const Header = () => {
   const navigation = [
     {
       name: "home",
-      href: "home",
+      href: "#",
     },
     {
       name: "about",
-      href: "about",
+      href: "#about",
     },
     {
       name: "project",
-      href: "project",
+      href: "#project",
     },
     {
       name: "contact",
-      href: "contact",
+      href: "#contact",
     },
   ];
 
@@ -54,14 +53,14 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scrollY > 50 ? setBg(true) : setBg(false);
+      return window.scrollY > 70 ? setBg(true) : setBg(false);
     });
   });
 
   return (
     <header
       className={`${
-        bg ? "bg-red-400 h-16" : "h-20"
+        bg ? "bg-red-400 h-20" : "h-20"
       } flex items-center fixed top-0 w-full text-black px-8 z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
@@ -72,20 +71,20 @@ const Header = () => {
           {/* <Nav /> */}
           <nav>
             <ul className="flex space-x-8 capitalize text-[15px]">
-              {navigation.map((item, idx) => {
+              {navigation.map((item, index) => {
                 return (
-                  <li className="text-black cursor-pointer" key={idx}>
-                    <Link
-                      to={item.href}
+                  <li className="text-black cursor-pointer" key={index}>
+                    <a
+                      href={item.href}
                       activeClass="active"
-                      spy={true}
-                      smooth={true}
+                      spy="true"
+                      smooth="true"
                       duration={500}
                       offset={-70}
                       className="transition-all duration-300"
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}
@@ -106,7 +105,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className="w-4 h-4 rounded-full bg-red-400 fixed top-0 right-0"
+              className="w-4 h-4 rounded-full bg-[#1cbe59] fixed top-0 right-0"
             ></motion.div>
 
             <motion.ul
@@ -124,22 +123,21 @@ const Header = () => {
                 {/* <XIcon className="w-8 h-8" /> */}
                 <BiX className="h-8 w-8" />
               </div>
-              {navigation.map((item, idx) => {
+              {navigation.map((item, index) => {
                 return (
-                  <li key={idx} className="mb-8">
-                    <Link
-                      to={item.href}
-                      smooth={true}
+                  <li key={index} className="mb-8">
+                    <a
+                      href={item.href}
+                      smooth="true"
                       duration={500}
                       offset={-70}
                       className="text-xl cursor-pointer capitalize"
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}
-              {/* <Socials /> */}
             </motion.ul>
           </nav>
         </div>

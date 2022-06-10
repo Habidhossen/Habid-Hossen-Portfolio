@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaCloudDownloadAlt,
   FaFacebook,
@@ -10,7 +9,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <section className="h-screen flex justify-center px-6 md:px-20 lg:px-28">
+    <section className="min-h-screen flex justify-center px-6 md:px-20 lg:px-28 mt-20 md:mt-0 lg:mt-0">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h5 className="banner-subtitle">Hello, I'm</h5>
@@ -20,8 +19,9 @@ const Banner = () => {
             <span className="purpleText">Bangladesh</span>
           </h5>
           <p className="banner-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            obcaecati voluptatum eveniet qui ipsa cumque.
+            I am a full-stack developer with a vast array of knowledge in many
+            different front-end and back-end languages, frameworks, databases,
+            and best code practices.
           </p>
           <div className="flex gap-3">
             <a
@@ -61,7 +61,7 @@ const Banner = () => {
             Resume
           </a>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center p-20 md:p-0 lg:p-0">
           <div className="banner-img-div">
             <img className="banner-img" src={profileImg} alt="" />
           </div>
