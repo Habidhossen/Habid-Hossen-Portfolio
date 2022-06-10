@@ -1,38 +1,41 @@
 .project-card {
   background-color: white;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 14px 16px 8px 16px;
+  border-radius: 10px;
   text-align: center;
 }
 .project-title {
+  font-family: var(--jostFont);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--heading);
+  margin: 10px 0 4px;
 }
 .project-text {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text);
-  margin: 10px 0 12px;
 }
 .project-badge {
-  background-color: aliceblue;
-  color: var(--green);
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 50px;
+  background-color: #d7f9db;
+  color: #1cbe59;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 30px;
 }
 .project-btn {
   display: flex;
   width: fit-content;
   align-items: center;
-  padding: 4px 18px;
+  padding: 4px 10px;
+  gap: 3px;
   border-radius: 50px;
   font-size: 12px;
   background-color: transparent;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--green);
   font-family: var(--jostFont);
-  color: var(--primary);
+  color: var(--green);
   transition: 0.2s;
 }
 .explore-btn {

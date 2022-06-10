@@ -19,8 +19,12 @@ const Header = () => {
       href: "about",
     },
     {
-      name: "portfolio",
-      href: "portfolio",
+      name: "project",
+      href: "project",
+    },
+    {
+      name: "contact",
+      href: "contact",
     },
   ];
 
@@ -62,7 +66,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
-        <a href="#">Logo</a>
+        <a href="">Habid Hossen</a>
         {/* nav */}
         <div className="hidden lg:block">
           {/* <Nav /> */}
