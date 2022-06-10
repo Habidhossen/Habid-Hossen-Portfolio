@@ -1,0 +1,49 @@
+.project-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--heading);
+}
+.project-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 10px 0 12px;
+}
+.project-badge {
+  background-color: aliceblue;
+  color: var(--green);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+.project-btn {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 4px 18px;
+  border-radius: 50px;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: var(--primary);
+  transition: 0.2s;
+}
+.explore-btn {
+  width: 100%;
+  align-items: center;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: white;
+  transition: 0.2s;
+}
