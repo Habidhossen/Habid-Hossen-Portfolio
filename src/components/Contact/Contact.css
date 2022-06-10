@@ -25,8 +25,8 @@ input,
 textarea {
   border: 1px solid #ddd;
   border-radius: 30px;
-  padding: 12px 20px;
-  font-size: 14px;
+  padding: 12px 20px !important;
+  font-size: 14px !important;
 }
 ::placeholder {
   color: red;
@@ -45,13 +45,13 @@ textarea:focus {
   padding: 12px 30px;
   border-radius: 50px;
   font-size: 18px;
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
   color: white;
   transition: 0.2s;
 }
 .send-msg-btn:hover {
-  background-color: transparent;
+  background-color: transparent !important;
   color: var(--primary);
 }

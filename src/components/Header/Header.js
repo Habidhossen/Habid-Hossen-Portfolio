@@ -1,61 +1,146 @@
-import React, { useState } from "react";
-import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { BiMenuAltRight, BiX } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
+  const [bg, setBg] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const Links = [
-    { name: "HOME", link: "/" },
-    { name: "SERVICE", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "BLOG'S", link: "/" },
-    { name: "CONTACT", link: "/" },
+  // navigation
+  const navigation = [
+    {
+      name: "home",
+      href: "home",
+    },
+    {
+      name: "about",
+      href: "about",
+    },
+    {
+      name: "portfolio",
+      href: "portfolio",
+    },
   ];
+
+  const circleVariants = {
+    hidden: {
+      scale: 0,
+    },
+    visible: {
+      scale: 180,
+      transition: {
+        type: "spring",
+        stiffness: 160,
+        damping: 60,
+      },
+    },
+  };
+
+  const ulVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.1,
+      },
+    },
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      return window.scrollY > 50 ? setBg(true) : setBg(false);
+    });
+  });
+
   return (
-    <nav>
-      <div className="md:flex items-center justify-between bg-slate-100 py-5 md:px-16 px-6">
-        {/* nav-logo */}
-        <div>
-          <h1
-            className="font-bold text-2xl cursor-pointer flex items-center
-      text-gray-800"
-          >
-            Portfolio
-          </h1>
+    <header
+      className={`${
+        bg ? "bg-red-400 h-16" : "h-20"
+      } flex items-center fixed top-0 w-full text-black px-8 z-10 transition-all duration-300`}
+    >
+      <div className="container mx-auto h-full flex items-center justify-between">
+        {/* logo */}
+        <a href="#">Logo</a>
+        {/* nav */}
+        <div className="hidden lg:block">
+          {/* <Nav /> */}
+          <nav>
+            <ul className="flex space-x-8 capitalize text-[15px]">
+              {navigation.map((item, idx) => {
+                return (
+                  <li className="text-black cursor-pointer" key={idx}>
+                    <Link
+                      to={item.href}
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      className="transition-all duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
         </div>
+        {/* nav mobile*/}
+        <div className="lg:hidden">
+          {/* <NavMobile /> */}
+          <nav className="relative">
+            <div onClick={() => setIsOpen(true)} className="cursor-pointer ">
+              {/* <MenuAlt3Icon className="w-8 h-8" /> */}
+              <BiMenuAltRight className="h-8 w-8" />
+            </div>
 
-        <div
-          onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
-        >
-          {open ? <HiX /> : <HiOutlineMenuAlt3 />}
-        </div>
-        <div>
-          <ul
-            className={`md:flex md:items-center md:pb-0 pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-16 transition-all duration-500 ease-in ${
-              open ? "top-16 bg-slate-100" : "top-[-490px]"
-            }`}
-          >
-            {Links.map((link) => (
-              <li key={link.name} className="md:ml-8 text-md md:my-0 my-7">
-                <a
-                  href={link.link}
-                  className="text-gray-800 hover:text-gray-400 duration-500"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+            {/* circle */}
+            <motion.div
+              variants={circleVariants}
+              initial="hidden"
+              animate={isOpen ? "visible" : "hidden"}
+              className="w-4 h-4 rounded-full bg-red-400 fixed top-0 right-0"
+            ></motion.div>
 
-        <div>
-          <button className="header-btn">Let's Talk</button>
+            <motion.ul
+              variants={ulVariants}
+              initial="hidden"
+              animate={isOpen ? "visible" : ""}
+              className={`${
+                isOpen ? "right-0" : "-right-full"
+              } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+            >
+              <div
+                onClick={() => setIsOpen(false)}
+                className="cursor-pointer absolute top-8 right-8"
+              >
+                {/* <XIcon className="w-8 h-8" /> */}
+                <BiX className="h-8 w-8" />
+              </div>
+              {navigation.map((item, idx) => {
+                return (
+                  <li key={idx} className="mb-8">
+                    <Link
+                      to={item.href}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      className="text-xl cursor-pointer capitalize"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
+              {/* <Socials /> */}
+            </motion.ul>
+          </nav>
         </div>
       </div>
-      <div></div>
-    </nav>
+    </header>
   );
 };
 
