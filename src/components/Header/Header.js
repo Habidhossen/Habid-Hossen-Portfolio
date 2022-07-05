@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { BiMenuAltRight, BiX } from "react-icons/bi";
+import { BiX } from "react-icons/bi";
+import { CgMenuRight } from "react-icons/cg";
 import "./Header.css";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  // random color generate for mobile navbar
+  const colors = ["bg-[#f75023]", "bg-[#8067f0]", "bg-[#1cbe59]"];
+  const randColor = colors[Math.floor(Math.random() * colors.length)];
 
   // navigation
   const navigation = [
@@ -60,14 +65,14 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? "bg-red-400 h-20" : "h-20"
-      } flex items-center fixed top-0 w-full text-black px-28 z-10 transition-all duration-300`}
+        bg ? "bg-[#f7f7f7] h-20" : "h-20"
+      } flex items-center fixed top-0 w-full text-black px-6 z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
         <a href="">Habid Hossen</a>
         {/* nav */}
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           {/* <Nav /> */}
           <nav>
             <ul className="flex space-x-8 capitalize text-[15px]">
@@ -92,12 +97,12 @@ const Header = () => {
           </nav>
         </div>
         {/* nav mobile*/}
-        <div className="lg:hidden">
+        <div className="md:hidden">
           {/* <NavMobile /> */}
           <nav className="relative">
             <div onClick={() => setIsOpen(true)} className="cursor-pointer ">
               {/* <MenuAlt3Icon className="w-8 h-8" /> */}
-              <BiMenuAltRight className="h-8 w-8" />
+              <CgMenuRight className="h-8 w-8" />
             </div>
 
             {/* circle */}
@@ -105,7 +110,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className="w-4 h-4 rounded-full bg-[#1cbe59] fixed top-0 right-0"
+              className={`w-4 h-4 rounded-full ${randColor} fixed top-0 right-0`}
             ></motion.div>
 
             <motion.ul

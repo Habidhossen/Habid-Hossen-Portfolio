@@ -29,11 +29,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen px-6 md:px-20 lg:px-28" id="contact">
+    <section className="min-h-screen px-6 md:px-20 lg:px-20" id="contact">
       <h1 className="section-title">
         Get In <span>Touch</span>
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-5">
         <div className="col-span-2">
           <h1 className="contact-heading-title">Don't be shy!</h1>
           <p className="contact-heading-text">
