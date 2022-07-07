@@ -1,5 +1,5 @@
 import { BiLink, BiSearchAlt2 } from "react-icons/bi";
-import "./Projects.css";
+import "../../assets/styles/style.css";
 
 const ProjectCard = ({ project }) => {
   const {

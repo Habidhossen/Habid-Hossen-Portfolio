@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import profileImg from "../../assets/images/profile-img.jpg";
 import "../../assets/styles/responsive.css";
-import "./Banner.css";
+import "../../assets/styles/style.css";
 
 const Banner = () => {
   return (

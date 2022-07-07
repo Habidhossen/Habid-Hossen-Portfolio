@@ -1,4 +1,3 @@
-import ParticlesBg from "particles-bg";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Contact from "./components/Contact/Contact";
@@ -9,7 +8,7 @@ import Projects from "./components/Projects/Projects";
 function App() {
   return (
     <div>
-      <ParticlesBg type="color" num={1} bg={true} />
+      {/* <ParticlesBg type="color" num={1} bg={true} /> */}
       <Header />
       <Banner />
       <Projects />

@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
-import "./Contact.css";
+import "../../assets/styles/style.css";
 
 const Contact = () => {
   const form = useRef();

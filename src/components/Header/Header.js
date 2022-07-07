@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { BiX } from "react-icons/bi";
 import { CgMenuRight } from "react-icons/cg";
-import "./Header.css";
+import "../../assets/styles/style.css";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -65,12 +65,14 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? "bg-[#f7f7f7] h-20" : "h-20"
-      } flex items-center fixed top-0 w-full text-black px-6 z-10 transition-all duration-300`}
+        bg ? "bg-[#f7f7f7] h-20 shadow-sm" : "h-20"
+      } flex items-center fixed top-0 w-full text-black z-10 transition-all duration-300`}
     >
-      <div className="container mx-auto h-full flex items-center justify-between">
+      <div className=" flex items-center justify-between">
         {/* logo */}
-        <a href="">Habid Hossen</a>
+        <div>
+          <a href="">Habid Hossen</a>
+        </div>
         {/* nav */}
         <div className="hidden md:block">
           {/* <Nav /> */}
