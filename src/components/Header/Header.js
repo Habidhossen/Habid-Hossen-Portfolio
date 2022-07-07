@@ -68,10 +68,12 @@ const Header = () => {
         bg ? "bg-[#f7f7f7] h-20 shadow-sm" : "h-20"
       } flex items-center fixed top-0 w-full text-black z-10 transition-all duration-300`}
     >
-      <div className=" flex items-center justify-between">
+      <div className="w-full mx-auto px-6 md:px-24 lg:px-24 flex items-center justify-between">
         {/* logo */}
         <div>
-          <a href="">Habid Hossen</a>
+          <a href="#" className="nav-brand">
+            Habid's Portfolio
+          </a>
         </div>
         {/* nav */}
         <div className="hidden md:block">
@@ -88,7 +90,7 @@ const Header = () => {
                       smooth="true"
                       duration={500}
                       offset={-70}
-                      className="transition-all duration-300"
+                      className="transition-all duration-300 nav-link"
                     >
                       {item.name}
                     </a>

@@ -1,4 +1,17 @@
 /* Header.js */
+
+.nav-brand {
+  color: var(--primary);
+  font-family: var(--jostFont);
+  font-size: 26px;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+.nav-link:focus {
+  color: var(--primary);
+}
+
 .header-btn {
   background-color: blueviolet;
   color: white;
@@ -128,8 +141,8 @@
   color: var(--text);
 }
 .project-badge {
-  background-color: #d7f9db;
-  color: #1cbe59;
+  background-color: #f8f6ff;
+  color: var(--purple);
   font-size: 11px;
   font-weight: 500;
   padding: 4px 12px;
@@ -149,17 +162,23 @@
   color: var(--green);
   transition: 0.2s;
 }
+.project-btn:hover {
+  background-color: var(--green);
+  color: white;
+}
 .explore-btn {
   width: 100%;
   align-items: center;
   padding: 8px 18px;
   border-radius: 50px;
   font-size: 16px;
-  background-color: var(--primary) !important;
-  border: 1px solid var(--primary);
+  background-color: var(--purple);
   font-family: var(--jostFont);
   color: white;
   transition: 0.2s;
+}
+.explore-btn:hover {
+  background-color: var(--primary);
 }
 
 /* Contact.js */
