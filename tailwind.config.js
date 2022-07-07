@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    // customize the screen size
     screens: {
       sm: "576px",
       // => @media (min-width: 576px) { ... }
@@ -13,5 +14,10 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  // add daisyUI
+  plugins: [require("daisyui")],
+  // dark theme false and apply default light theme
+  daisyui: {
+    themes: false,
+  },
 };

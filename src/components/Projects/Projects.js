@@ -1,11 +1,26 @@
+import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import projectBanner1 from "../../assets/images/projectBanner1.png";
-import projectBanner2 from "../../assets/images/projectBanner2.png";
-import projectBanner3 from "../../assets/images/projectBanner3.png";
-import ProjectCard from "./ProjectCard";
+import MobileProjects from "./MobileProjects";
+import WebProjects from "./WebProjects";
 
 const Projects = () => {
-  const projectsData = [
+  // state declare
+  const [webProjectToggle, setWebProjectToggle] = useState(true);
+  const [mobileProjectToggle, setMobileProjectToggle] = useState(false);
+
+  // handle web toggle button
+  const webToggle = () => {
+    setWebProjectToggle(true);
+    setMobileProjectToggle(false);
+  };
+  // handle mobile toggle button
+  const mobileToggle = () => {
+    setMobileProjectToggle(true);
+    setWebProjectToggle(false);
+  };
+
+  const webProjectsData = [
     {
       id: 1,
       banner: projectBanner1,
@@ -17,7 +32,7 @@ const Projects = () => {
       clientCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Client",
       serverCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Server",
     },
-    {
+    /* {
       id: 2,
       banner: projectBanner2,
       projectTitle: "CarSpot - Wheels and Deals",
@@ -40,7 +55,33 @@ const Projects = () => {
       liveLink: "https://travel-to-go-6c371.web.app/",
       clientCodeLink: "https://github.com/Habidhossen/Travel-To-Go",
       serverCodeLink: "https://github.com/Habidhossen/Travel-To-Go",
+    }, */
+  ];
+  const mobileProjectsData = [
+    {
+      id: 10,
+      banner: projectBanner1,
+      projectTitle: "CGPA Calculator",
+      projectDesc:
+        "A manufacturer's website where customers can order tools and manages tools.",
+      technologies: ["React", "Firebase", "Node", "MongoDB"],
+      liveLink: "https://apparatus-store-f3edc.web.app/",
+      clientCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Client",
+      serverCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Server",
     },
+    /*  {
+      id: 11,
+      banner: projectBanner2,
+      projectTitle: "BMI Calculator",
+      projectDesc:
+        "A warehouse/dealership-based website that stores products and manages products.",
+      technologies: ["React", "Firebase", "Node", "MongoDB"],
+      liveLink: "https://carspot-wheels-and-deals.web.app/",
+      clientCodeLink:
+        "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Client",
+      serverCodeLink:
+        "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Server",
+    }, */
   ];
 
   return (
@@ -49,11 +90,42 @@ const Projects = () => {
         My <span>Projects</span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
-        {projectsData.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+      {/* toggle button */}
+      <div className="flex justify-center gap-4 mb-8">
+        <button
+          className={`project-toggle-btn ${
+            webProjectToggle && "project-toggle-btn-active"
+          }`}
+          onClick={() => webToggle()}
+        >
+          Web Application
+        </button>
+        <button
+          className={`project-toggle-btn ${
+            mobileProjectToggle && "project-toggle-btn-active"
+          }`}
+          onClick={() => mobileToggle()}
+        >
+          Mobile Application
+        </button>
       </div>
+
+      {/* mapping data */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
+        {webProjectsData?.map((webProject) => (
+          <WebProjectCard key={webProject.id} webProject={webProject} />
+        ))}
+        {mobileProjectsData?.map((mobileProject) => (
+          <MobileProjectCard
+            key={mobileProject.id}
+            mobileProject={mobileProject}
+          />
+        ))}
+      </div> */}
+
+      {webProjectToggle && <WebProjects />}
+      {mobileProjectToggle && <MobileProjects />}
+
       <div className="flex justify-end mt-6">
         <button className="project-footer-btn">
           More Projects <BsArrowRight />

@@ -122,6 +122,20 @@
 }
 
 /* Project.js */
+.project-toggle-btn {
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: var(--primary);
+}
+.project-toggle-btn-active {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: white;
+}
 .project-card {
   background-color: white;
   padding: 14px 16px 8px 16px;
@@ -167,6 +181,7 @@
   color: white;
 }
 .explore-btn {
+  display: block;
   width: 100%;
   align-items: center;
   padding: 8px 18px;
@@ -175,11 +190,12 @@
   background-color: var(--purple);
   font-family: var(--jostFont);
   color: white;
+  cursor: pointer;
   transition: 0.2s;
 }
-.explore-btn:hover {
+/* .explore-btn:hover {
   background-color: var(--primary);
-}
+} */
 .project-footer-btn {
   display: flex;
   align-items: center;
