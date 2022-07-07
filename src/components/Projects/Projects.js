@@ -1,9 +1,8 @@
+import { BsArrowRight } from "react-icons/bs";
 import projectBanner1 from "../../assets/images/projectBanner1.png";
 import projectBanner2 from "../../assets/images/projectBanner2.png";
 import projectBanner3 from "../../assets/images/projectBanner3.png";
 import ProjectCard from "./ProjectCard";
-
-//a warehouse/dealership-based website that stores products and manages products.
 
 const Projects = () => {
   const projectsData = [
@@ -54,6 +53,11 @@ const Projects = () => {
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
+      </div>
+      <div className="flex justify-end mt-6">
+        <button className="project-footer-btn">
+          More Projects <BsArrowRight />
+        </button>
       </div>
     </section>
   );

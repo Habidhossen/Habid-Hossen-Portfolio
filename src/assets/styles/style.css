@@ -180,6 +180,15 @@
 .explore-btn:hover {
   background-color: var(--primary);
 }
+.project-footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--jostFont);
+  color: var(--primary);
+  font-weight: 16px;
+  font-weight: 500;
+}
 
 /* Contact.js */
 .contact-heading-title {
