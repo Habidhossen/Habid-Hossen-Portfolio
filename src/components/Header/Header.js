@@ -58,7 +58,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scrollY > 70 ? setBg(true) : setBg(false);
+      return window.scrollY > 90 ? setBg(true) : setBg(false);
     });
   });
 

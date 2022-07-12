@@ -4,9 +4,13 @@ import "../../assets/styles/style.css";
 const Services = () => {
   return (
     <section className="min-h-screen px-6 md:px-20 lg:px-28" id="services">
-      <h1 className="section-title">
-        My <span>Services</span>
-      </h1>
+      <div className="my-12">
+        <h1 className="section-title">
+          My <span>Services</span>
+        </h1>
+        <hr className="heading-line-a" />
+        <hr className="heading-line-b" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-12">
         {/* service */}
         <div className="flex flex-col items-center text-center">

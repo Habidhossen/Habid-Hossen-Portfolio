@@ -1,9 +1,9 @@
 /* Header.js */
 
 .nav-brand {
-  color: var(--primary);
-  font-family: var(--jostFont);
-  font-size: 26px;
+  color: var(--heading);
+  font-size: 16px;
+  font-weight: 800;
 }
 .nav-link:hover {
   color: var(--primary);
@@ -25,16 +25,29 @@
   text-align: center;
   /* text-transform: uppercase; */
   color: var(--heading);
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 .section-title span {
   color: var(--primary);
 }
+.heading-line-a {
+  margin: 0 auto;
+  width: 100px;
+  height: 3px;
+  background-color: red;
+}
+.heading-line-b {
+  margin: 5px auto;
+  width: 70px;
+  height: 3px;
+  background-color: red;
+}
 .banner-title {
-  font-family: var(--jostFont);
-  font-weight: 500;
-  font-size: 60px;
+  /* font-family: var(--jostFont); */
+  font-weight: 700;
+  font-size: 50px;
   color: var(--heading);
+  text-transform: uppercase;
 }
 .banner-subtitle {
   font-family: var(--jostFont);
