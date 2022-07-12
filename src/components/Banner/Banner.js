@@ -10,7 +10,7 @@ import "../../assets/styles/style.css";
 
 const Banner = () => {
   return (
-    <section className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 mt-20 md:mt-0 lg:mt-0">
+    <section className="bg-[#f9f9ff] min-h-screen flex justify-center px-6 md:px-28 lg:px-28 mt-20 md:mt-0 lg:mt-0">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h5 className="banner-subtitle">Hello, I'm</h5>
