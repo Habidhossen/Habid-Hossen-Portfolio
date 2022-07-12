@@ -275,3 +275,16 @@ footer {
   background-color: var(--greyBg);
   height: 130px;
 }
+
+/* Sections */
+.service-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 16px 0 12px;
+}
+.service-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+}

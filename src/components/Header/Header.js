@@ -65,10 +65,10 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? "bg-[#f7f7f7] h-20 shadow-sm" : "h-20"
+        bg ? "bg-white h-[70px] shadow-sm" : "h-[70px]"
       } flex items-center fixed top-0 w-full text-black z-10 transition-all duration-300`}
     >
-      <div className="w-full mx-auto px-6 md:px-24 lg:px-24 flex items-center justify-between">
+      <div className="w-full mx-auto px-6 md:px-28 lg:px-28 flex items-center justify-between">
         {/* logo */}
         <div>
           <a href="#" className="nav-brand">

@@ -4,6 +4,7 @@ import ProjectModal from "./ProjectModal";
 
 const ProjectCard = ({ Project }) => {
   const {
+    id,
     banner,
     projectTitle,
     projectDesc,
