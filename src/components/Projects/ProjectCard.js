@@ -13,8 +13,6 @@ const ProjectCard = ({ Project }) => {
     serverCodeLink,
   } = Project;
 
-  console.log(Project);
-
   return (
     <div>
       {/* project card */}
