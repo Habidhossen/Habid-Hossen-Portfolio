@@ -29,12 +29,16 @@ const About = () => {
               Hey! I'm <span>Habid Hossen</span>
             </h1>
             <p className="about-desc">
-              A professional Web Designer & Developer from Chattogram,
-              Bangladesh. Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Facilis ex minus corporis excepturi explicabo, id quod,
-              assumenda harum tempore quasi nam, pariatur minima quae quisquam
-              culpa repellendus. Iure quam sunt eos vel similique. Quae id
-              beatae excepturi dolor impedit ratione?
+              A professional Full Stack Web Developer, Open Source enthusiast,
+              and a Computer Science and Engineering student from Chattogram,
+              Bangladesh.
+            </p>
+            <p className="about-desc">
+              I have experience in Front-end (HTML, CSS, JavaScript, React.Js),
+              Back-end (Node.Js, Express.Js, PHP), Android App (Java), Databases
+              (MongoDB, MySQL) and UI/UX designs (Figma). I like to Code,
+              Design, Innovate and Experiment. I am an enthusiastic and social
+              person who loves taking on new challenges and learning new skills.
             </p>
             <p className="about-bullet">
               <FaCheckCircle className="text-primary" />
@@ -42,7 +46,7 @@ const About = () => {
             </p>
             <p className="about-bullet">
               <FaCheckCircle className="text-primary" />
-              <span>Education:</span> B.Sc. in Computer Science and Engineering
+              <span>Education:</span> B.Sc. in CSE
             </p>
             <a href="tel:+8801854092871" className="about-bullet">
               <FaCheckCircle className="text-primary" />

@@ -37,7 +37,7 @@
   background-color: red;
 }
 .heading-underline-b {
-  margin: 5px auto;
+  margin: 3px auto;
   width: 70px;
   height: 3px;
   background-color: red;
@@ -373,7 +373,7 @@ footer {
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
   color: var(--primary);
-  transition: 0.1s;
+  transition: 0.5s;
 }
 .resume-outline-btn:hover {
   background-color: var(--primary);
