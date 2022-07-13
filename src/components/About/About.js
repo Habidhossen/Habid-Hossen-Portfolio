@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 import codingSVG from "../../assets/icons/coding.svg";
 
 const About = () => {
@@ -17,17 +18,29 @@ const About = () => {
           <img src={codingSVG} alt="" />
         </div>
         <div>
-          <h1>More info about me</h1>
-          <p>
+          <h1 className="about-title">More info about me</h1>
+          <p className="about-desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
             quo voluptas officiis magnam, excepturi cum eaque. Dolore quo
             distinctio voluptatibus quos molestiae, atque praesentium eos.
             Commodi tenetur vitae voluptates necessitatibus!
           </p>
-          <h5>City: Chittagong, Bangladesh</h5>
-          <h5>Education: B.Sc in Computer Science and Engineering</h5>
-          <h5>WhatsApp: +88 01854-092871</h5>
-          <h5>Email: habidhossen2@gmail.com</h5>
+          <p className="about-bullet">
+            <FaCheckCircle className="text-primary" />
+            <span>City:</span> Chattogram, Bangladesh
+          </p>
+          <p className="about-bullet">
+            <FaCheckCircle className="text-primary" />
+            <span>Education:</span> B.Sc. in Computer Science and Engineering
+          </p>
+          <a href="tel:+8801854092871" className="about-bullet">
+            <FaCheckCircle className="text-primary" />
+            <span>WhatsApp:</span> +88 01854-092871
+          </a>
+          <a href="mailto:habidhossen2@gmail.com" className="about-bullet">
+            <FaCheckCircle className="text-primary" />
+            <span>Email:</span> habidhossen2@gmail.com
+          </a>
         </div>
       </div>
     </section>

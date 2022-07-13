@@ -333,3 +333,24 @@ footer {
 .skill-item-icon {
   width: 20px;
 }
+
+/* About Section */
+.about-title {
+}
+.about-desc {
+  margin: 10px 0 12px;
+  font-size: 16px;
+  color: var(--text);
+}
+.about-bullet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+.about-bullet span {
+  font-weight: 700;
+}

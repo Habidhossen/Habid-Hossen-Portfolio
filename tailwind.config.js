@@ -12,7 +12,11 @@ module.exports = {
       lg: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#f52225",
+      },
+    },
   },
   // add daisyUI
   plugins: [require("daisyui")],
