@@ -1,5 +1,11 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import {
+  FaCheckCircle,
+  FaCloudDownloadAlt,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import codingSVG from "../../assets/icons/coding.svg";
 
 const About = () => {
@@ -18,29 +24,80 @@ const About = () => {
           <img src={codingSVG} alt="" />
         </div>
         <div>
-          <h1 className="about-title">More info about me</h1>
-          <p className="about-desc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-            quo voluptas officiis magnam, excepturi cum eaque. Dolore quo
-            distinctio voluptatibus quos molestiae, atque praesentium eos.
-            Commodi tenetur vitae voluptates necessitatibus!
-          </p>
-          <p className="about-bullet">
-            <FaCheckCircle className="text-primary" />
-            <span>City:</span> Chattogram, Bangladesh
-          </p>
-          <p className="about-bullet">
-            <FaCheckCircle className="text-primary" />
-            <span>Education:</span> B.Sc. in Computer Science and Engineering
-          </p>
-          <a href="tel:+8801854092871" className="about-bullet">
-            <FaCheckCircle className="text-primary" />
-            <span>WhatsApp:</span> +88 01854-092871
-          </a>
-          <a href="mailto:habidhossen2@gmail.com" className="about-bullet">
-            <FaCheckCircle className="text-primary" />
-            <span>Email:</span> habidhossen2@gmail.com
-          </a>
+          <div>
+            <h1 className="about-title">
+              Hey! I'm <span>Habid Hossen</span>
+            </h1>
+            <p className="about-desc">
+              A professional Web Designer & Developer from Chattogram,
+              Bangladesh. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Facilis ex minus corporis excepturi explicabo, id quod,
+              assumenda harum tempore quasi nam, pariatur minima quae quisquam
+              culpa repellendus. Iure quam sunt eos vel similique. Quae id
+              beatae excepturi dolor impedit ratione?
+            </p>
+            <p className="about-bullet">
+              <FaCheckCircle className="text-primary" />
+              <span>City:</span> Chattogram, Bangladesh
+            </p>
+            <p className="about-bullet">
+              <FaCheckCircle className="text-primary" />
+              <span>Education:</span> B.Sc. in Computer Science and Engineering
+            </p>
+            <a href="tel:+8801854092871" className="about-bullet">
+              <FaCheckCircle className="text-primary" />
+              <span>WhatsApp:</span> +88 01854-092871
+            </a>
+            <a href="mailto:habidhossen2@gmail.com" className="about-bullet">
+              <FaCheckCircle className="text-primary" />
+              <span>Email:</span> habidhossen2@gmail.com
+            </a>
+          </div>
+
+          {/* Buttons Collection Div*/}
+          <div className="flex items-center gap-6 mt-6">
+            {/* Resume-Download Button */}
+            <div>
+              <a
+                href="https://drive.google.com/u/0/uc?id=1xrWjLAE-fspgWPeHByiF3LeOsHCbqxbo&export=download"
+                className="resume-outline-btn"
+                rel="noreferrer"
+              >
+                <FaCloudDownloadAlt />
+                Resume
+              </a>
+            </div>
+            {/* Social Buttons */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://github.com/habidhossen"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="icon-bg">
+                  <FaGithub />
+                </p>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/habidhossen"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="icon-bg">
+                  <FaLinkedin />
+                </p>
+              </a>
+              <a
+                href="https://facebook.com/habidhossen"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="icon-bg">
+                  <FaFacebook />
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

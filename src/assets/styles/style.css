@@ -311,8 +311,8 @@ footer {
 }
 .skill-title-underline {
   margin: 0 auto;
-  width: 70px;
-  height: 2px;
+  width: 30px;
+  height: 3px;
   background-color: red;
 }
 .skill-item-container {
@@ -336,9 +336,16 @@ footer {
 
 /* About Section */
 .about-title {
+  font-family: var(--jostFont);
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--heading);
+}
+.about-title span {
+  color: var(--primary);
 }
 .about-desc {
-  margin: 10px 0 12px;
+  margin: 12px 0 18px;
   font-size: 16px;
   color: var(--text);
 }
@@ -353,4 +360,22 @@ footer {
 }
 .about-bullet span {
   font-weight: 700;
+}
+.resume-outline-btn {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: var(--primary);
+  transition: 0.1s;
+}
+.resume-outline-btn:hover {
+  background-color: var(--primary);
+  color: white;
 }
