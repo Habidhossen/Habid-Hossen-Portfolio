@@ -1,6 +1,23 @@
 import React from "react";
+import androidstudio from "../../assets/icons/android-studio.svg";
+import bootstrap from "../../assets/icons/bootstrap.svg";
+import cpp from "../../assets/icons/c++.svg";
 import css from "../../assets/icons/css.svg";
+import firebase from "../../assets/icons/firebase.svg";
+import git from "../../assets/icons/git.svg";
 import html from "../../assets/icons/html.svg";
+import java from "../../assets/icons/java.svg";
+import javascript from "../../assets/icons/javascript.svg";
+import materialui from "../../assets/icons/materialui.svg";
+import mongodb from "../../assets/icons/mongodb.svg";
+import mysql from "../../assets/icons/mysql.svg";
+import node from "../../assets/icons/nodejs.svg";
+import npm from "../../assets/icons/npm.svg";
+import php from "../../assets/icons/php.svg";
+import postman from "../../assets/icons/postman.svg";
+import react from "../../assets/icons/reactjs.svg";
+import tailwindcss from "../../assets/icons/tailwindcss.svg";
+import vscode from "../../assets/icons/vscode.svg";
 
 import "../../assets/styles/style.css";
 
@@ -57,79 +74,7 @@ const Services = () => {
               />
             </svg>
           </span>
-          <h1 className="service-title">Web Design</h1>
-          <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
-          </p>
-        </div>
-        {/* service */}
-        <div className="flex flex-col items-center text-center">
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-          </span>
           <h1 className="service-title">App Development</h1>
-          <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
-          </p>
-        </div>
-        {/* service */}
-        <div className="flex flex-col items-center text-center">
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-          </span>
-          <h1 className="service-title">Clean Code</h1>
-          <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
-          </p>
-        </div>
-        {/* service */}
-        <div className="flex flex-col items-center text-center">
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-          </span>
-          <h1 className="service-title">Fully Responsive</h1>
           <p className="service-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             exercitationem consequuntur est excepturi a obcaecati.
@@ -160,99 +105,129 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="mt-10 mb-8">
         <h1 className="skill-title">Tech I'm Familiar With</h1>
         <hr className="skill-title-underline" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-10 gap-y-5">
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={html} alt="" />
+          <img className="skill-item-icon" src={html} alt="" />
           <p className="skill-item-title">HTML</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={css} alt="" />
           <p className="skill-item-title">CSS</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={bootstrap} alt="" />
           <p className="skill-item-title">Bootstrap</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={tailwindcss} alt="" />
           <p className="skill-item-title">Tailwind CSS</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={html} alt="" />
+          <img className="skill-item-icon" src={materialui} alt="" />
           <p className="skill-item-title">Material UI</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={javascript} alt="" />
           <p className="skill-item-title">JavaScript</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
-          <p className="skill-item-title">ES6</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={react} alt="" />
           <p className="skill-item-title">React.js</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={html} alt="" />
+          <img className="skill-item-icon" src={node} alt="" />
           <p className="skill-item-title">Node.js</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={css} alt="" />
           <p className="skill-item-title">Express.js</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={mongodb} alt="" />
           <p className="skill-item-title">MongoDB</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
-          <p className="skill-item-title">Firebase</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img src={html} alt="" />
+          <img className="skill-item-icon" src={mysql} alt="" />
           <p className="skill-item-title">MySQL</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
+          <img className="skill-item-icon" src={firebase} alt="" />
+          <p className="skill-item-title">Firebase</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={cpp} alt="" />
+          <p className="skill-item-title">C++</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={java} alt="" />
+          <p className="skill-item-title">Java</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={php} alt="" />
+          <p className="skill-item-title">PHP</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={git} alt="" />
           <p className="skill-item-title">Git</p>
         </div>
 
         {/* skill item */}
         <div className="skill-item-container">
-          <img src={css} alt="" />
-          <p className="skill-item-title">Github</p>
+          <img className="skill-item-icon" src={npm} alt="" />
+          <p className="skill-item-title">NPM</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={postman} alt="" />
+          <p className="skill-item-title">Postman</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={androidstudio} alt="" />
+          <p className="skill-item-title">Android Studio</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img className="skill-item-icon" src={vscode} alt="" />
+          <p className="skill-item-title">Visual Studio Code</p>
         </div>
       </div>
     </section>
