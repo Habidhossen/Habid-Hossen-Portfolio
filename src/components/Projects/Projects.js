@@ -25,8 +25,8 @@ const Projects = () => {
         <h1 className="section-title">
           Recent <span>Projects</span>
         </h1>
-        <hr className="heading-line-a" />
-        <hr className="heading-line-b" />
+        <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" />
       </div>
 
       {/* toggle button */}

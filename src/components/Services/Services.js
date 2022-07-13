@@ -1,4 +1,7 @@
 import React from "react";
+import css from "../../assets/icons/css.svg";
+import html from "../../assets/icons/html.svg";
+
 import "../../assets/styles/style.css";
 
 const Services = () => {
@@ -8,8 +11,8 @@ const Services = () => {
         <h1 className="section-title">
           My <span>Services</span>
         </h1>
-        <hr className="heading-line-a" />
-        <hr className="heading-line-b" />
+        <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-12">
         {/* service */}
@@ -155,6 +158,101 @@ const Services = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             exercitationem consequuntur est excepturi a obcaecati.
           </p>
+        </div>
+      </div>
+      <div>
+        <h1 className="skill-title">Tech I'm Familiar With</h1>
+        <hr className="skill-title-underline" />
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-10 gap-y-5">
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={html} alt="" />
+          <p className="skill-item-title">HTML</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">CSS</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Bootstrap</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Tailwind CSS</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={html} alt="" />
+          <p className="skill-item-title">Material UI</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">JavaScript</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">ES6</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">React.js</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={html} alt="" />
+          <p className="skill-item-title">Node.js</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Express.js</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">MongoDB</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Firebase</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={html} alt="" />
+          <p className="skill-item-title">MySQL</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Git</p>
+        </div>
+
+        {/* skill item */}
+        <div className="skill-item-container">
+          <img src={css} alt="" />
+          <p className="skill-item-title">Github</p>
         </div>
       </div>
     </section>

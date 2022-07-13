@@ -34,8 +34,8 @@ const Contact = () => {
         <h1 className="section-title">
           Get In <span>Touch</span>
         </h1>
-        <hr className="heading-line-a" />
-        <hr className="heading-line-b" />
+        <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-5">
         <div className="col-span-2">

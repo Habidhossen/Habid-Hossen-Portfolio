@@ -7,8 +7,8 @@ const Blogs = () => {
         <h1 className="section-title">
           My <span>Blogs</span>
         </h1>
-        <hr className="heading-line-a" />
-        <hr className="heading-line-b" />
+        <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" />
       </div>
       <div>
         <h5 className="text-center text-lg font-semibold">Coming Soon...</h5>
