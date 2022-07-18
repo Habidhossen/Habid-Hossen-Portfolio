@@ -1,4 +1,23 @@
-const ProjectModal = () => {
+const ProjectModal = ({ showProjectDetail }) => {
+  console.log("inside modal", showProjectDetail);
+
+  const {
+    id,
+    banner,
+    projectTitle,
+    projectDesc,
+    technologies,
+    liveLink,
+    clientCodeLink,
+    serverCodeLink,
+  } = showProjectDetail;
+  console.log(id);
+  // const { id } = deletingProduct;
+
+  // console.log(id);
+
+  // console.log(projectTitle);
+
   return (
     <div>
       <input type="checkbox" id="project-modal" class="modal-toggle" />
@@ -10,13 +29,8 @@ const ProjectModal = () => {
           >
             ✕
           </label>
-          <h3 class="font-bold text-lg">Project Title</h3>
-          <p class="py-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-            doloremque, officia non, doloribus facilis eos, architecto nulla
-            voluptate libero quibusdam laboriosam a dolorem itaque. Quos aliquam
-            repudiandae eveniet aspernatur molestiae?
-          </p>
+          <h3 class="font-bold text-lg">{projectTitle}</h3>
+          <p class="py-4">{projectDesc}</p>
         </div>
       </div>
     </div>

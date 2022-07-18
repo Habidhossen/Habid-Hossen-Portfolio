@@ -1,8 +1,7 @@
 import { BiLink, BiSearchAlt2 } from "react-icons/bi";
 import "../../assets/styles/style.css";
-import ProjectModal from "./ProjectModal";
 
-const ProjectCard = ({ Project }) => {
+const ProjectCard = ({ Project, setShowProjectDetail }) => {
   const {
     id,
     banner,
@@ -58,12 +57,16 @@ const ProjectCard = ({ Project }) => {
               Github Server
             </a>
           </div>
-          <label for="project-modal" className="explore-btn mt-3">
+          <label
+            onClick={() => setShowProjectDetail(Project)}
+            for="project-modal"
+            className="explore-btn mt-3"
+          >
             Explore More
           </label>
         </div>
       </div>
-      <ProjectModal />
+      {/* <ProjectModal /> */}
     </div>
   );
 };
