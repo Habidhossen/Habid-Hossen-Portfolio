@@ -10,7 +10,7 @@ const ProjectModal = () => {
           >
             ✕
           </label>
-          <h3 class="font-bold text-lg">Apparatus Store</h3>
+          <h3 class="font-bold text-lg">Project Title</h3>
           <p class="py-4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
             doloremque, officia non, doloribus facilis eos, architecto nulla

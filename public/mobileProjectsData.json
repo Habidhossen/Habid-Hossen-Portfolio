@@ -1,0 +1,20 @@
+[
+  {
+    "id": 10,
+    "banner": "https://1.bp.blogspot.com/-fFMv046nPnI/YPm-La-8D1I/AAAAAAAABwg/9P39eCjxOaUPow1IfrPUojvPCoCLGi1pwCLcBGAsYHQ/w640-h312/CGPA-App-banner-2.png",
+    "projectTitle": "CGPA Calculator",
+    "projectDesc": "A manufacturer's website where customers can order tools and manages tools.",
+    "technologies": ["Android", "Java", "XML"],
+    "liveLink": "https://apparatus-store-f3edc.web.app/",
+    "clientCodeLink": "https://github.com/Habidhossen/Apparatus-Store-Client"
+  },
+  {
+    "id": 11,
+    "banner": "https://1.bp.blogspot.com/-kuWdEf0ANQo/YPnQqMcrlCI/AAAAAAAABww/JickUmu3vG4yGU3Ay_n7365CRybAnhVGwCLcBGAsYHQ/w640-h312/cgpa_banner.jpg",
+    "projectTitle": "BMI Calculator",
+    "projectDesc": "A manufacturer's website where customers can order tools and manages tools.",
+    "technologies": ["Android", "Java", "XML"],
+    "liveLink": "https://apparatus-store-f3edc.web.app/",
+    "clientCodeLink": "https://github.com/Habidhossen/Apparatus-Store-Client"
+  }
+]

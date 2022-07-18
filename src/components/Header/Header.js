@@ -93,7 +93,7 @@ const Header = () => {
                   <li className="text-black cursor-pointer" key={index}>
                     <a
                       href={item.href}
-                      activeClass="active"
+                      activeclassName="active"
                       spy="true"
                       smooth="true"
                       duration={500}

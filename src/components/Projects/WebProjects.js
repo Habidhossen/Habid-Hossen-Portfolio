@@ -1,10 +1,8 @@
-import projectBanner1 from "../../assets/images/projectBanner1.png";
-import projectBanner2 from "../../assets/images/projectBanner2.png";
-import projectBanner3 from "../../assets/images/projectBanner3.png";
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 const WebProjects = () => {
-  const webProjectsData = [
+  /* const webProjectsData = [
     {
       id: 1,
       banner: projectBanner1,
@@ -40,7 +38,15 @@ const WebProjects = () => {
       clientCodeLink: "https://github.com/Habidhossen/Travel-To-Go",
       serverCodeLink: "https://github.com/Habidhossen/Travel-To-Go",
     },
-  ];
+  ]; */
+
+  const [webProjectsData, setWebProjectsData] = useState([]);
+
+  useEffect(() => {
+    fetch("webProjectsData.json")
+      .then((res) => res.json())
+      .then((data) => setWebProjectsData(data));
+  }, []);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">

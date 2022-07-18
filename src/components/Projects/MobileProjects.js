@@ -1,9 +1,8 @@
-import projectBanner1 from "../../assets/images/projectBanner1.png";
-import projectBanner2 from "../../assets/images/projectBanner2.png";
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 const MobileProjects = () => {
-  const mobileProjectsData = [
+  /* const mobileProjectsData = [
     {
       id: 10,
       banner: projectBanner1,
@@ -28,7 +27,15 @@ const MobileProjects = () => {
       serverCodeLink:
         "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Server",
     },
-  ];
+  ]; */
+
+  const [mobileProjectsData, setMobileProjectData] = useState([]);
+
+  useEffect(() => {
+    fetch("mobileProjectsData.json")
+      .then((res) => res.json())
+      .then((data) => setMobileProjectData(data));
+  }, []);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
