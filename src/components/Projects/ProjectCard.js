@@ -57,6 +57,8 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
               Github Server
             </a>
           </div>
+
+          {/* Project detail Modal Label */}
           <label
             onClick={() => setShowProjectDetail(Project)}
             for="project-modal"
@@ -66,7 +68,6 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
           </label>
         </div>
       </div>
-      {/* <ProjectModal /> */}
     </div>
   );
 };

@@ -1,36 +1,14 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
 
 const MobileProjects = () => {
-  /* const mobileProjectsData = [
-    {
-      id: 10,
-      banner: projectBanner1,
-      projectTitle: "CGPA Calculator",
-      projectDesc:
-        "A manufacturer's website where customers can order tools and manages tools.",
-      technologies: ["React", "Firebase", "Node", "MongoDB"],
-      liveLink: "https://apparatus-store-f3edc.web.app/",
-      clientCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Client",
-      serverCodeLink: "https://github.com/Habidhossen/Apparatus-Store-Server",
-    },
-    {
-      id: 11,
-      banner: projectBanner2,
-      projectTitle: "BMI Calculator",
-      projectDesc:
-        "A warehouse/dealership-based website that stores products and manages products.",
-      technologies: ["React", "Firebase", "Node", "MongoDB"],
-      liveLink: "https://carspot-wheels-and-deals.web.app/",
-      clientCodeLink:
-        "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Client",
-      serverCodeLink:
-        "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Server",
-    },
-  ]; */
-
+  // state declare for storing fetching data
   const [mobileProjectsData, setMobileProjectData] = useState([]);
+  // state declare for storing project detail data (Modal)
+  const [showProjectDetail, setShowProjectDetail] = useState({});
 
+  // fetch web project data from JSON file
   useEffect(() => {
     fetch("mobileProjectsData.json")
       .then((res) => res.json())
@@ -40,8 +18,17 @@ const MobileProjects = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
       {mobileProjectsData?.map((mobileProject) => (
-        <ProjectCard key={mobileProject.id} Project={mobileProject} />
+        <ProjectCard
+          key={mobileProject.id}
+          Project={mobileProject}
+          setShowProjectDetail={setShowProjectDetail}
+        />
       ))}
+
+      {/* show project detail Modal */}
+      {setShowProjectDetail && (
+        <ProjectModal showProjectDetail={showProjectDetail} />
+      )}
     </div>
   );
 };

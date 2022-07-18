@@ -49,6 +49,7 @@ const Projects = () => {
         </button>
       </div>
 
+      {/* show web and mobile project via toggle */}
       {webProjectToggle && <WebProjects />}
       {mobileProjectToggle && <MobileProjects />}
 

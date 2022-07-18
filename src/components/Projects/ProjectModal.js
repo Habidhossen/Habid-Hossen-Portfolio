@@ -1,6 +1,4 @@
 const ProjectModal = ({ showProjectDetail }) => {
-  console.log("inside modal", showProjectDetail);
-
   const {
     id,
     banner,
@@ -11,12 +9,6 @@ const ProjectModal = ({ showProjectDetail }) => {
     clientCodeLink,
     serverCodeLink,
   } = showProjectDetail;
-  console.log(id);
-  // const { id } = deletingProduct;
-
-  // console.log(id);
-
-  // console.log(projectTitle);
 
   return (
     <div>
