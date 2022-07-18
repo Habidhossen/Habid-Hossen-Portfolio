@@ -43,11 +43,12 @@
   background-color: red;
 }
 .banner-title {
-  /* font-family: var(--jostFont); */
-  font-weight: 700;
+  font-family: var(--jostFont);
+  font-weight: 500;
   font-size: 50px;
   color: var(--heading);
   text-transform: uppercase;
+  margin: 5px 0;
 }
 .banner-subtitle {
   font-family: var(--jostFont);
@@ -58,7 +59,7 @@
 .banner-text {
   font-size: 16px;
   color: var(--text);
-  margin: 20px 0;
+  margin: 16px 0 20px 0;
 }
 .banner-designation {
   font-family: var(--jostFont);
@@ -74,20 +75,38 @@
 }
 .icon-bg {
   display: inline-flex;
-  background-color: #eee;
   color: #2b2a2a;
   font-size: 17px;
   padding: 10px;
   border-radius: 50px;
-  transition: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.5s;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .icon-bg:hover {
   background-color: var(--primary);
   color: whitesmoke;
 }
 .resume-btn {
-  margin-top: 20px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: white;
+  transition: 0.5s;
+}
+.resume-btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+.about-me-btn {
+  /* margin-top: 20px; */
   display: flex;
   width: fit-content;
   align-items: center;
@@ -102,9 +121,6 @@
   /* box-shadow: 0px 23px 44px 1px rgba(255, 124, 106, 0.48);
   -webkit-box-shadow: 0px 23px 44px 1px rgba(255, 109, 109, 0.48);
   -moz-box-shadow: 0px 23px 44px 1px rgba(255, 109, 109, 0.48); */
-}
-.resume-btn:hover {
-  background-color: var(--purple);
 }
 
 .banner-img-div {
@@ -378,4 +394,27 @@ footer {
 .resume-outline-btn:hover {
   background-color: var(--primary);
   color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-title {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+  }
+  .banner-text {
+    font-size: 16px;
+
+    margin: 16px 0 20px 0;
+  }
+  .banner-designation {
+    font-size: 18px;
+  }
+  .banner-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }

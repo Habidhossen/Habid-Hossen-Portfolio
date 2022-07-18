@@ -23,7 +23,10 @@ import "../../assets/styles/style.css";
 
 const Services = () => {
   return (
-    <section className="min-h-screen px-6 md:px-20 lg:px-28" id="services">
+    <section
+      className="min-h-screen bg-white px-6 md:px-20 lg:px-28"
+      id="services"
+    >
       <div className="my-12">
         <h1 className="section-title">
           My <span>Skills</span>

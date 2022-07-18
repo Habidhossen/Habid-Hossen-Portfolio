@@ -10,7 +10,10 @@ import codingSVG from "../../assets/icons/coding.svg";
 
 const About = () => {
   return (
-    <section className="min-h-screen px-6 md:px-20 lg:px-28" id="about">
+    <section
+      className="min-h-screen bg-white px-6 md:px-20 lg:px-28"
+      id="about"
+    >
       <div className="my-12">
         <h1 className="section-title">
           <span>About</span> Me
@@ -30,7 +33,7 @@ const About = () => {
             </h1>
             <p className="about-desc">
               A professional Full Stack Web Developer, Open Source enthusiast,
-              and a Computer Science and Engineering student from Chattogram,
+              and a Computer Science and Engineering student from Chittagong,
               Bangladesh.
             </p>
             <p className="about-desc">
@@ -42,7 +45,7 @@ const About = () => {
             </p>
             <p className="about-bullet">
               <FaCheckCircle className="text-primary" />
-              <span>City:</span> Chattogram, Bangladesh
+              <span>City:</span> Chittagong, Bangladesh
             </p>
             <p className="about-bullet">
               <FaCheckCircle className="text-primary" />
@@ -64,7 +67,7 @@ const About = () => {
             <div>
               <a
                 href="https://drive.google.com/u/0/uc?id=1xrWjLAE-fspgWPeHByiF3LeOsHCbqxbo&export=download"
-                className="resume-outline-btn"
+                className="resume-btn"
                 rel="noreferrer"
               >
                 <FaCloudDownloadAlt />
