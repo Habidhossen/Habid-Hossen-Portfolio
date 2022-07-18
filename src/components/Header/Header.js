@@ -66,7 +66,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scrollY > 60 ? setBg(true) : setBg(false);
+      return window.scrollY > 70 ? setBg(true) : setBg(false);
     });
   });
 
@@ -85,9 +85,8 @@ const Header = () => {
         </div>
         {/* nav */}
         <div className="hidden md:block">
-          {/* <Nav /> */}
           <nav>
-            <ul className="flex space-x-8 capitalize text-[15px]">
+            <ul className="flex space-x-8 uppercase text-[14px]">
               {navigation.map((item, index) => {
                 return (
                   <li className="text-black cursor-pointer" key={index}>
