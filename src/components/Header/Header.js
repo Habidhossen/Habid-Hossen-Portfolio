@@ -9,8 +9,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // random color generate for mobile navbar
-  const colors = ["bg-[#f75023]", "bg-[#8067f0]", "bg-[#1cbe59]"];
-  const randColor = colors[Math.floor(Math.random() * colors.length)];
+  /*   const colors = ["bg-[#f75023]", "bg-[#8067f0]", "bg-[#1cbe59]"];
+  const randColor = colors[Math.floor(Math.random() * colors.length)]; */
 
   // navigation
   const navigation = [
@@ -114,7 +114,7 @@ const Header = () => {
           <nav className="relative">
             <div onClick={() => setIsOpen(true)} className="cursor-pointer ">
               {/* <MenuAlt3Icon className="w-8 h-8" /> */}
-              <CgMenuRight className="h-8 w-8" />
+              <CgMenuRight className="h-6 w-6" />
             </div>
 
             {/* circle */}
@@ -122,7 +122,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className={`w-4 h-4 rounded-full ${randColor} fixed top-0 right-0`}
+              className={`w-4 h-4 rounded-full bg-primary fixed top-0 right-0`}
             ></motion.div>
 
             <motion.ul
@@ -138,7 +138,7 @@ const Header = () => {
                 className="cursor-pointer absolute top-8 right-8"
               >
                 {/* <XIcon className="w-8 h-8" /> */}
-                <BiX className="h-8 w-8" />
+                <BiX className="h-6 w-6" />
               </div>
               {navigation.map((item, index) => {
                 return (

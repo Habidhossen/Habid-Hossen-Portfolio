@@ -6,7 +6,8 @@ const Banner = () => {
   return (
     <section className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 mt-20 md:mt-0 lg:mt-0">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-        <div className="flex flex-col justify-center order-2 md:order-1 lg:order-1 banner-left">
+        {/* order-2 md:order-1 lg:order-1 */}
+        <div className="flex flex-col justify-center banner-left">
           <h5 className="banner-subtitle">Hello, I'm</h5>
           <h1 className="banner-title">Habid Hossen</h1>
           <h5 className="banner-designation">
@@ -54,7 +55,8 @@ const Banner = () => {
             </a>
           </div> */}
         </div>
-        <div className="flex justify-center items-center p-10 md:p-0 lg:p-0 order-1 md:order-2 lg:order-2 banner-right">
+        {/*  order-1 md:order-2 lg:order-2 */}
+        <div className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right">
           <div className="banner-img-div">
             <img className="banner-img" src={profileImg} alt="" />
           </div>
