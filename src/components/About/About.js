@@ -11,7 +11,7 @@ import codingSVG from "../../assets/icons/coding.svg";
 const About = () => {
   return (
     <section
-      className="min-h-screen bg-white px-6 md:px-20 lg:px-28"
+      className="min-h-screen bg-white py-8 px-6 md:px-20 lg:px-28"
       id="about"
     >
       <div className="my-12">

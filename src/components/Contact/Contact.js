@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen px-6 md:px-20 lg:px-20" id="contact">
+    <section className="min-h-screen py-6 px-6 md:px-20 lg:px-20" id="contact">
       <div className="my-12">
         <h1 className="section-title">
           Get In <span>Touch</span>

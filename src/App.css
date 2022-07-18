@@ -8,7 +8,7 @@
 body {
   font-family: "Jost", sans-serif;
   font-family: "Open Sans", sans-serif;
-  /* background-color: var(--bgColor); */
+  background-color: var(--bgColor);
 }
 
 :root {

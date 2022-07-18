@@ -2,7 +2,6 @@ import ParticlesBg from "particles-bg";
 import "./App.css";
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
-import Blogs from "./components/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -12,13 +11,17 @@ import Services from "./components/Services/Services";
 function App() {
   return (
     <div>
-      <ParticlesBg type="color" num={1} bg={true} />
+      <ParticlesBg
+        type="color"
+        num={1}
+        bg={{ position: "absolute", zIndex: 0 }}
+      />
       <Header />
       <Banner />
       <About />
       <Services />
       <Projects />
-      <Blogs />
+      {/* <Blogs /> */}
       <Contact />
       <Footer />
     </div>

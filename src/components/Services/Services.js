@@ -24,7 +24,7 @@ import "../../assets/styles/style.css";
 const Services = () => {
   return (
     <section
-      className="min-h-screen bg-white px-6 md:px-20 lg:px-28"
+      className="min-h-screen bg-white py-8 px-6 md:px-20 lg:px-28"
       id="services"
     >
       <div className="my-12">
