@@ -38,7 +38,7 @@ const ProjectModal = ({ showProjectDetail }) => {
           {/* modal container */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* right div */}
-            <div>
+            <div className="p-4">
               {/* <div>
                 <img src={banner} alt="" />
               </div> */}
@@ -96,11 +96,16 @@ const ProjectModal = ({ showProjectDetail }) => {
 
               <div className="mt-6">
                 <h3 className="features-title">Technologies Used:</h3>
-                {technologies?.map((tech, index) => (
-                  <span key={index} className="project-badge">
-                    {tech}
-                  </span>
-                ))}
+                <div className="">
+                  {technologies?.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="badge badge-primary badge-outline"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
 
