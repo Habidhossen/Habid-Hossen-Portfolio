@@ -13,6 +13,8 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
     serverCodeLink,
   } = Project;
 
+  console.log(banner);
+
   return (
     <div>
       {/* project card */}
@@ -20,7 +22,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
         <img src={banner} alt="" />
         <div className="p-2 mt-3">
           <div className="flex gap-2 justify-center">
-            {technologies.map((tech, index) => (
+            {technologies?.slice(0, 4).map((tech, index) => (
               <span key={index} className="project-badge">
                 {tech}
               </span>

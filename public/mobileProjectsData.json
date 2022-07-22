@@ -1,20 +1,42 @@
 [
   {
-    "id": 10,
-    "banner": "https://1.bp.blogspot.com/-fFMv046nPnI/YPm-La-8D1I/AAAAAAAABwg/9P39eCjxOaUPow1IfrPUojvPCoCLGi1pwCLcBGAsYHQ/w640-h312/CGPA-App-banner-2.png",
+    "id": 101,
+    "type": "mobile",
+    "banner": "./assets/project-images/cgpa-calculator/banner.jpg",
+    "images": ["", "", ""],
     "projectTitle": "CGPA Calculator",
-    "projectDesc": "A manufacturer's website where customers can order tools and manages tools.",
+    "projectDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
+    "features": [
+      "Simple UI",
+      "Easy and attractive UX",
+      "Select Grade & Credit easily",
+      "Automatically calculation",
+      "Calculate CGPA with Unlimited Course",
+      "Use without net connection",
+      "Lightweight & Small APK size"
+    ],
     "technologies": ["Android", "Java", "XML"],
-    "liveLink": "https://apparatus-store-f3edc.web.app/",
-    "clientCodeLink": "https://github.com/Habidhossen/Apparatus-Store-Client"
+    "liveLink": "https://www.amazon.com/dp/B099Q4JKZ2",
+    "githubCodeLink": "https://www.amazon.com/dp/B099Q4JKZ2"
   },
   {
-    "id": 11,
-    "banner": "https://1.bp.blogspot.com/-kuWdEf0ANQo/YPnQqMcrlCI/AAAAAAAABww/JickUmu3vG4yGU3Ay_n7365CRybAnhVGwCLcBGAsYHQ/w640-h312/cgpa_banner.jpg",
+    "id": 102,
+    "type": "mobile",
+    "banner": "./assets/project-images/bmi-calculator/banner.jpg",
+    "images": ["", "", ""],
     "projectTitle": "BMI Calculator",
-    "projectDesc": "A manufacturer's website where customers can order tools and manages tools.",
+    "projectDesc": "BMI - The Body Mass Index calculates your body fat based on your weight and height and calculated with the standard formula also used by WHO.",
+    "features": [
+      "Simple and user-friendly interface",
+      "Easy and Free to use (no ads).",
+      "No internet connection required for calculation.",
+      "Healthy weight range",
+      "Easy to input height and weight",
+      "BMI classification and Score",
+      "Accurate BMI Chart"
+    ],
     "technologies": ["Android", "Java", "XML"],
-    "liveLink": "https://apparatus-store-f3edc.web.app/",
-    "clientCodeLink": "https://github.com/Habidhossen/Apparatus-Store-Client"
+    "liveLink": "https://www.amazon.com/dp/B099QYGHPQ",
+    "githubCodeLink": "https://www.amazon.com/dp/B099QYGHPQ"
   }
 ]
