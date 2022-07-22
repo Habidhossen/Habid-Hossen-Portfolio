@@ -4,9 +4,9 @@
     "type": "web",
     "banner": "./assets/project-images/carspot/banner.png",
     "images": [
-      "../src/assets/images/carspot/img1.png",
-      "../src/assets/images/carspot/img2.png",
-      "../src/assets/images/carspot/img3.png"
+      "./assets/project-images/carspot/img1.png",
+      "./assets/project-images/carspot/img2.png",
+      "./assets/project-images/carspot/img3.png"
     ],
     "projectTitle": "Apparatus Store",
     "projectDesc": "Apparatus Store is a manufacturer's website where customers can order tools like metalwork tools, electric tools, etc. After successfully ordering, customers can pay and get further process about their products/tools.",
@@ -43,9 +43,9 @@
     "type": "web",
     "banner": "./assets/project-images/carspot/banner.png",
     "images": [
-      "../src/assets/images/carspot/img1.png",
-      "../src/assets/images/carspot/img2.png",
-      "../src/assets/images/carspot/img3.png"
+      "./assets/project-images/carspot/img1.png",
+      "./assets/project-images/carspot/img2.png",
+      "./assets/project-images/carspot/img3.png"
     ],
     "projectTitle": "CarSpot - Wheels and Deals",
     "projectDesc": "CarSpot - Wheels and Deals is a car warehouse website that deals with cars. It's basically a warehouse/dealership based website where stored products and manage it.",
@@ -70,9 +70,9 @@
     "type": "web",
     "banner": "./assets/project-images/carspot/banner.png",
     "images": [
-      "../src/assets/images/carspot/img1.png",
-      "../src/assets/images/carspot/img2.png",
-      "../src/assets/images/carspot/img3.png"
+      "./assets/project-images/carspot/img1.png",
+      "./assets/project-images/carspot/img2.png",
+      "./assets/project-images/carspot/img3.png"
     ],
     "projectTitle": "Travel To Go",
     "projectDesc": "The Travel To Go Website is especially for tourists who want a tour guide for their next adventure trip. Where a single tour guide provides many facilities. Tourists can get all services like Zip Lines, Kayaking, Bungee Jump, etc.",

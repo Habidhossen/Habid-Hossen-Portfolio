@@ -1,5 +1,9 @@
-/* Header.js */
+/* Customize swiper-slider button color */
+.swiper-pagination-bullet {
+  background-color: var(--primary) !important;
+}
 
+/* Header.js */
 .nav-brand {
   color: var(--heading);
   font-size: 16px;
@@ -194,9 +198,11 @@
 }
 .project-btn {
   display: flex;
-  width: fit-content;
+  width: 100%;
   align-items: center;
-  padding: 4px 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 0;
   gap: 3px;
   border-radius: 50px;
   font-size: 12px;
@@ -394,6 +400,25 @@ footer {
 .resume-outline-btn:hover {
   background-color: var(--primary);
   color: white;
+}
+
+/* Project Modal */
+.project-desc {
+  font-size: 14px;
+  color: var(--text);
+  margin: 10px 0;
+}
+.features-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 6px;
+}
+.features-bullet {
+  font-size: 14px;
+  color: var(--text);
+  padding: 6px 0;
+  list-style: circle;
 }
 
 @media screen and (max-width: 576px) {

@@ -30,7 +30,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
           </div>
           <h1 className="project-title">{projectTitle}</h1>
           <p className="project-text">{projectDesc}</p>
-          <div className="flex justify-between mt-4 mb-2">
+          <div className="flex justify-between mt-4 mb-2 gap-2">
             <a
               className="project-btn"
               href={liveLink}
