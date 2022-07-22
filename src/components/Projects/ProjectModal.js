@@ -38,7 +38,7 @@ const ProjectModal = ({ showProjectDetail }) => {
           {/* modal container */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* right div */}
-            <div className="p-2">
+            <div>
               {/* <div>
                 <img src={banner} alt="" />
               </div> */}
@@ -64,7 +64,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                 ))}
               </Swiper>
 
-              <div className="flex justify-between mt-4 mb-2 gap-2">
+              <div className="flex justify-between mt-6 mb-4 gap-2">
                 <a
                   className="project-btn"
                   href={liveLink}
@@ -93,11 +93,11 @@ const ProjectModal = ({ showProjectDetail }) => {
                   Github Server
                 </a>
               </div>
-              <div className="mt-6">
+              <div>
                 <h3 className="features-title">Technologies Used:</h3>
-                <div className="">
+                <div className="flex flex-wrap gap-1">
                   {technologies?.map((tech, index) => (
-                    <span key={index} className="project-badge">
+                    <span key={index} className="project-modal-badge">
                       {tech}
                     </span>
                   ))}
