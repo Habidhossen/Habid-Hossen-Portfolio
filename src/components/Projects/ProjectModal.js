@@ -66,7 +66,7 @@ const ProjectModal = ({ showProjectDetail }) => {
 
               <div className="flex justify-between mt-6 mb-4 gap-2">
                 <a
-                  className="project-btn"
+                  className="modal-project-btn"
                   href={liveLink}
                   target="_blank"
                   rel="noreferrer"
@@ -75,7 +75,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                   Live Site
                 </a>
                 <a
-                  className="project-btn"
+                  className="modal-project-btn"
                   href={clientCodeLink}
                   target="_blank"
                   rel="noreferrer"
@@ -84,7 +84,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                   Github Client
                 </a>
                 <a
-                  className="project-btn"
+                  className="modal-project-btn"
                   href={serverCodeLink}
                   target="_blank"
                   rel="noreferrer"
@@ -97,7 +97,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                 <h3 className="features-title">Technologies Used:</h3>
                 <div className="flex flex-wrap gap-1">
                   {technologies?.map((tech, index) => (
-                    <span key={index} className="project-modal-badge">
+                    <span key={index} className="modal-project-badge">
                       {tech}
                     </span>
                   ))}
@@ -114,9 +114,11 @@ const ProjectModal = ({ showProjectDetail }) => {
               <div>
                 <h3 className="features-title">Features:</h3>
                 {features?.map((feature, index) => (
-                  <li key={index} className="features-bullet">
-                    {feature}
-                  </li>
+                  <ul>
+                    <li key={index} className="features-bullet">
+                      {feature}
+                    </li>
+                  </ul>
                 ))}
               </div>
             </div>

@@ -417,15 +417,36 @@ footer {
   font-size: 14px;
   color: var(--text);
   padding: 6px 0;
-  list-style: circle;
+  list-style: square;
+  margin-left: 18px;
 }
-.project-modal-badge {
-  background-color: #f522260e;
+.modal-project-badge {
+  background-color: #f5222609;
   color: var(--primary);
   font-size: 12px;
   padding: 4px 16px;
   border-radius: 50px;
   cursor: pointer;
+}
+.modal-project-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  gap: 6px;
+  border-radius: 50px;
+  font-size: 13px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: white;
+  transition: 0.5s;
+}
+.modal-project-btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 @media screen and (max-width: 576px) {
