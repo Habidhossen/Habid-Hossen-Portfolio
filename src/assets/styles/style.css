@@ -406,13 +406,12 @@ footer {
 .project-desc {
   font-size: 14px;
   color: var(--text);
-  margin: 10px 0;
 }
 .features-title {
   font-size: 15px;
   font-weight: 700;
   color: var(--heading);
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .features-bullet {
   font-size: 14px;

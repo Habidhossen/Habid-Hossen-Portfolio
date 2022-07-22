@@ -94,7 +94,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                 </a>
               </div>
 
-              <div>
+              <div className="mt-6">
                 <h3 className="features-title">Technologies Used:</h3>
                 {technologies?.map((tech, index) => (
                   <span key={index} className="project-badge">
@@ -106,7 +106,7 @@ const ProjectModal = ({ showProjectDetail }) => {
 
             {/* left div */}
             <div>
-              <div>
+              <div className="mb-4">
                 <h3 className="features-title">Description:</h3>
                 <p className="project-desc">{projectDesc}</p>
               </div>
