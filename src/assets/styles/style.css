@@ -434,9 +434,9 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 6px 0;
-  gap: 6px;
+  gap: 3px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 12px;
   background-color: var(--primary);
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
