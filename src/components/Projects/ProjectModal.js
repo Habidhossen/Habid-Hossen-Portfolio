@@ -1,5 +1,6 @@
 import { BiLink, BiSearchAlt2 } from "react-icons/bi";
 import "../../assets/styles/style.css";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -39,9 +40,6 @@ const ProjectModal = ({ showProjectDetail }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* right div */}
             <div>
-              {/* <div>
-                <img src={banner} alt="" />
-              </div> */}
               <Swiper
                 spaceBetween={30}
                 effect={"fade"}
@@ -64,7 +62,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                 ))}
               </Swiper>
 
-              <div className="flex justify-between mt-6 mb-4 gap-2">
+              <div className="flex justify-between mt-2 mb-4 gap-2">
                 <a
                   className="modal-project-btn"
                   href={liveLink}

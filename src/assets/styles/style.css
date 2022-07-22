@@ -1,4 +1,7 @@
 /* Customize swiper-slider button color */
+.swiper {
+  padding-bottom: 40px !important;
+}
 .swiper-pagination-bullet {
   background-color: var(--primary) !important;
 }
@@ -159,22 +162,23 @@
 .project-toggle-btn {
   padding: 4px 10px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--primary);
   font-family: var(--jostFont);
-  color: var(--green);
+  color: var(--primary);
 }
 .project-toggle-btn-active {
-  background-color: var(--green);
+  background-color: var(--primary);
   border: 1px solid transparent;
   color: white;
 }
 .project-card {
   background-color: white;
-  padding: 14px 16px 8px 16px;
+  /* padding: 12px; */
   border-radius: 10px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .project-title {
   font-family: var(--jostFont);
@@ -206,10 +210,10 @@
   gap: 3px;
   border-radius: 50px;
   font-size: 12px;
-  background-color: transparent;
+  background-color: var(--green);
   border: 1px solid var(--green);
   font-family: var(--jostFont);
-  color: var(--green);
+  color: white;
   transition: 0.2s;
 }
 .project-btn:hover {
@@ -217,17 +221,18 @@
   color: white;
 }
 .explore-btn {
-  display: block;
-  width: 100%;
+  display: flex;
   align-items: center;
-  padding: 8px 18px;
-  border-radius: 50px;
-  font-size: 16px;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
   background-color: var(--purple);
   font-family: var(--jostFont);
   color: white;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 /* .explore-btn:hover {
   background-color: var(--primary);
@@ -449,6 +454,7 @@ footer {
   border: 1px solid var(--primary);
 }
 
+/* responsive */
 @media screen and (max-width: 576px) {
   .banner-title {
     font-size: 38px;

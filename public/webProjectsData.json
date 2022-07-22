@@ -10,6 +10,7 @@
     ],
     "projectTitle": "Apparatus Store",
     "projectDesc": "Apparatus Store is a manufacturer's website where customers can order tools like metalwork tools, electric tools, etc. After successfully ordering, customers can pay and get further process about their products/tools.",
+    "shortDesc": "A manufacturer's website where customers can order tools and manages tools.",
     "features": [
       "Customers/users can view product/tool information. They can order, cancel and pay.",
       "Users can view, edit their profile and update info. Users/customers also add reviews about products which will show on the home page and everyone see it. But before this process users have must be logged in.",
@@ -49,6 +50,7 @@
     ],
     "projectTitle": "CarSpot - Wheels and Deals",
     "projectDesc": "CarSpot - Wheels and Deals is a car warehouse website that deals with cars. It's basically a warehouse/dealership based website where stored products and manage it.",
+    "shortDesc": "A warehouse/dealership-based website that stores products and manages products.",
     "features": [
       "The client/customer can view car information such as the latest car price, car stock, and overall latest car information.",
       "Admin can add a new product, manage and delete products such as stock cars, etc.",
@@ -76,6 +78,7 @@
     ],
     "projectTitle": "Travel To Go",
     "projectDesc": "The Travel To Go Website is especially for tourists who want a tour guide for their next adventure trip. Where a single tour guide provides many facilities. Tourists can get all services like Zip Lines, Kayaking, Bungee Jump, etc.",
+    "shortDesc": "This website is especially for tourists who want a tour guide for their trip.",
     "features": [
       "Tourists can get all services via single platform.",
       "This website is protected with a Firebase Login System. So users do have not to worry about the security system.",

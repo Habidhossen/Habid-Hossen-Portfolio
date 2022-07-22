@@ -1,12 +1,19 @@
 import { BiLink, BiSearchAlt2 } from "react-icons/bi";
+import { BsArrowRight } from "react-icons/bs";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "../../assets/styles/style.css";
 
 const ProjectCard = ({ Project, setShowProjectDetail }) => {
   const {
     id,
     banner,
+    images,
     projectTitle,
     projectDesc,
+    shortDesc,
     technologies,
     liveLink,
     clientCodeLink,
@@ -19,8 +26,31 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
     <div>
       {/* project card */}
       <div className="project-card">
-        <img src={banner} alt="" />
-        <div className="p-2 mt-3">
+        {/* <img src={banner} alt="" /> */}
+
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+        >
+          {images?.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img src={img} alt="" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="px-3">
           <div className="flex gap-2 justify-center">
             {technologies?.slice(0, 4).map((tech, index) => (
               <span key={index} className="project-badge">
@@ -29,8 +59,8 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
             ))}
           </div>
           <h1 className="project-title">{projectTitle}</h1>
-          <p className="project-text">{projectDesc}</p>
-          <div className="flex justify-between mt-4 mb-4 gap-2">
+          <p className="project-text">{shortDesc}</p>
+          <div className="flex justify-between mt-7 gap-2">
             <a
               className="project-btn"
               href={liveLink}
@@ -59,16 +89,15 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
               Github Server
             </a>
           </div>
-
-          {/* Project detail Modal Label */}
-          <label
-            onClick={() => setShowProjectDetail(Project)}
-            for="project-modal"
-            className="explore-btn mt-3"
-          >
-            Explore More
-          </label>
         </div>
+        {/* Project detail Modal Label */}
+        <label
+          onClick={() => setShowProjectDetail(Project)}
+          for="project-modal"
+          className="explore-btn mt-3"
+        >
+          Explore More <BsArrowRight />
+        </label>
       </div>
     </div>
   );
