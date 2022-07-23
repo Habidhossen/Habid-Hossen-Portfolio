@@ -35,10 +35,10 @@ const Contact = () => {
         <h1 className="section-title text-white">
           Get In <span>Touch</span>
         </h1>
-        {/*  <hr className="heading-underline-a" />
-        <hr className="heading-underline-b" /> */}
+        <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-8">
         <div className="col-span-2">
           <h1 className="contact-heading-title">Don't be shy!</h1>
           <p className="contact-heading-text">
@@ -47,7 +47,7 @@ const Contact = () => {
             visions.
           </p>
           <div className="flex items-center">
-            <p className="bg-[#D7F9DB] text-[#1cbe59] p-4 rounded-[50px] text-3xl">
+            <p className="bg-[#D7F9DB] text-[#1cbe59] p-3 rounded-[50px] text-3xl">
               <MdLocationOn />
             </p>
             <div className="ml-6">
@@ -56,21 +56,25 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center mt-4">
-            <p className="bg-[#FFE6D7] text-[#f75023] p-4 rounded-[50px] text-3xl">
+            <p className="bg-[#FFE6D7] text-[#f75023] p-3 rounded-[50px] text-3xl">
               <MdEmail />
             </p>
             <div className="ml-6">
               <h2 className="contact-title">Mail me</h2>
-              <h3 className="contact-text">habidhossen2@gmail.com</h3>
+              <a href="mailto:habidhossen2@gmail.com" className="contact-text">
+                habidhossen2@gmail.com
+              </a>
             </div>
           </div>
           <div className="flex items-center mt-4">
-            <p className="bg-[#DBEEF3] text-[#8067f0] p-4 rounded-[50px] text-3xl">
+            <p className="bg-[#DBEEF3] text-[#8067f0] p-3 rounded-[50px] text-3xl">
               <MdPhone />
             </p>
             <div className="ml-6">
               <h2 className="contact-title">Call me</h2>
-              <h3 className="contact-text">+88 01854-092871</h3>
+              <a href="tel:+8801854092871" className="contact-text">
+                +88 01854-092871
+              </a>
             </div>
           </div>
         </div>
@@ -78,7 +82,7 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <div className="md:flex lg:flex gap-4">
               <input
-                className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mb-0 lg:mb-0"
+                className="w-full md:w-1/2 lg:w-1/2 mb-4 md:mb-0 lg:mb-0"
                 type="text"
                 placeholder="Your Name"
                 name="name"

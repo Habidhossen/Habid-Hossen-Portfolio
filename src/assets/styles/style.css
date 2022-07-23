@@ -40,14 +40,16 @@
 .heading-underline-a {
   margin: 0 auto;
   width: 100px;
-  height: 3px;
-  background-color: red;
+  height: 2px;
+  background-color: var(--primary);
+  border: none;
 }
 .heading-underline-b {
   margin: 3px auto;
   width: 70px;
-  height: 3px;
-  background-color: red;
+  height: 2px;
+  background-color: var(--primary);
+  border: none;
 }
 .banner-title {
   font-family: var(--jostFont);
@@ -88,7 +90,7 @@
   border-radius: 50px;
   transition: 0.5s;
   background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
 }
 .icon-bg:hover {
   background-color: var(--primary);
@@ -158,7 +160,97 @@
   top: -25px;
 }
 
-/* Project.js */
+/* About Section */
+.about-title {
+  font-family: var(--jostFont);
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--heading);
+}
+.about-title span {
+  color: var(--primary);
+}
+.about-desc {
+  margin: 12px 0 18px;
+  font-size: 16px;
+  color: var(--text);
+}
+.about-bullet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+.about-bullet span {
+  font-weight: 700;
+}
+.resume-outline-btn {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: var(--primary);
+  transition: 0.5s;
+}
+.resume-outline-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Services/Skills Sections */
+.service-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 16px 0 12px;
+}
+.service-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+}
+.skill-title {
+  text-align: center;
+  font-family: var(--jostFont);
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 400;
+}
+.skill-title-underline {
+  margin: 0 auto;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+}
+.skill-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--bgColor);
+  padding: 16px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.skill-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading);
+}
+.skill-item-icon {
+  width: 20px;
+}
+
+/* Project Section */
 .project-toggle-btn {
   padding: 4px 10px;
   border-radius: 50px;
@@ -236,7 +328,6 @@
   box-shadow: 0 0 20px #eee;
   transition: 0.5s;
 }
-
 .project-btn:hover {
   /* background-color: var(--green);
   color: white; */
@@ -268,7 +359,6 @@
 .explore-btn:hover {
   background-position: right center; /* change the direction of the change here */
 }
-
 /* .explore-btn:hover {
   background-color: var(--primary);
 } */
@@ -281,179 +371,6 @@
   font-weight: 16px;
   font-weight: 500;
 }
-
-/* Contact.js */
-#contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://1.bp.blogspot.com/-1gUx5GrHWbw/YJnW9L2ruYI/AAAAAAAAAI0/V_hWZ_JwtXIqCCpxInMyYAvWH7y7C4iBgCLcBGAsYHQ/s16000/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.contact-heading-title {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: white;
-}
-.contact-heading-text {
-  font-size: 16px;
-  font-weight: 300;
-  color: whitesmoke;
-  margin: 14px 0 32px;
-}
-.contact-title {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: white;
-}
-.contact-text {
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  margin-top: 4px;
-}
-input,
-textarea {
-  border: 0.5px solid rgb(32, 32, 32);
-  background-color: rgba(20, 20, 20, 0.5);
-  color: #f4f4f4 !important;
-  border-radius: 30px;
-  padding: 12px 20px !important;
-  font-size: 14px !important;
-}
-::placeholder {
-}
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 0.5px solid #797979;
-}
-.send-msg-btn {
-  margin-top: 20px;
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 26px;
-  border-radius: 50px;
-  font-size: 16px;
-  background-color: var(--primary) !important;
-  border: 1px solid var(--primary);
-  font-family: var(--jostFont);
-  color: white;
-  transition: 0.2s;
-}
-.send-msg-btn:hover {
-  background-color: transparent !important;
-  color: var(--primary);
-}
-
-/* Footer.js */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--jostFont);
-  color: #f4f4f4;
-  /* background-color: var(--greyBg); */
-  height: 130px;
-}
-
-/* Sections */
-.service-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--heading);
-  margin: 16px 0 12px;
-}
-.service-desc {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--text);
-}
-.skill-title {
-  text-align: center;
-  font-family: var(--jostFont);
-  color: var(--primary);
-  font-size: 20px;
-  font-weight: 400;
-}
-.skill-title-underline {
-  margin: 0 auto;
-  width: 30px;
-  height: 3px;
-  background-color: red;
-}
-.skill-item-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background-color: var(--bgColor);
-  padding: 16px 0;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.skill-item-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--heading);
-}
-.skill-item-icon {
-  width: 20px;
-}
-
-/* About Section */
-.about-title {
-  font-family: var(--jostFont);
-  font-size: 23px;
-  font-weight: 500;
-  color: var(--heading);
-}
-.about-title span {
-  color: var(--primary);
-}
-.about-desc {
-  margin: 12px 0 18px;
-  font-size: 16px;
-  color: var(--text);
-}
-.about-bullet {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--heading);
-  margin-bottom: 8px;
-}
-.about-bullet span {
-  font-weight: 700;
-}
-.resume-outline-btn {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 28px;
-  border-radius: 30px;
-  font-size: 16px;
-  background-color: transparent;
-  border: 1px solid var(--primary);
-  font-family: var(--jostFont);
-  color: var(--primary);
-  transition: 0.5s;
-}
-.resume-outline-btn:hover {
-  background-color: var(--primary);
-  color: white;
-}
-
 /* Project Modal */
 .project-desc {
   font-size: 14px;
@@ -504,6 +421,91 @@ footer {
 }
 .modal-project-btn:hover {
   background-position: right center; /* change the direction of the change here */
+}
+
+/* Contact.js */
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://1.bp.blogspot.com/-1gUx5GrHWbw/YJnW9L2ruYI/AAAAAAAAAI0/V_hWZ_JwtXIqCCpxInMyYAvWH7y7C4iBgCLcBGAsYHQ/s16000/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-heading-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+.contact-heading-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: whitesmoke;
+  margin: 14px 0 32px;
+}
+.contact-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+}
+.contact-text {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 4px;
+  font-family: var(--jostFont);
+}
+input,
+textarea {
+  border: 0.5px solid rgb(32, 32, 32);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: #f4f4f4 !important;
+  border-radius: 30px;
+  padding: 12px 20px !important;
+  font-size: 14px !important;
+}
+::placeholder {
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 0.5px solid #797979;
+}
+.send-msg-btn {
+  margin-top: 20px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 26px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  font-family: var(--jostFont);
+  color: white;
+  transition: 0.2s;
+}
+.send-msg-btn:hover {
+  background-color: transparent !important;
+  color: var(--primary);
+}
+
+/* Footer.js */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--jostFont);
+  color: #f4f4f4;
+  /* background-color: var(--greyBg); */
+  height: 130px;
 }
 
 /* responsive */
