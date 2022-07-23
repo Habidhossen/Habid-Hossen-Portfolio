@@ -10,7 +10,7 @@ import codingSVG from "../../assets/icons/coding.svg";
 
 const About = () => {
   return (
-    <section className="py-8 px-6 md:px-20 lg:px-28" id="about">
+    <section className="pt-2 pb-8 px-6 md:px-20 lg:px-28" id="about">
       <div className="my-12">
         <h1 className="section-title">
           <span>About</span> Me

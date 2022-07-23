@@ -105,7 +105,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10 mb-8">
+      <div className="mt-14 mb-8">
         <h1 className="skill-title">Tech I'm Familiar With</h1>
         <hr className="skill-title-underline" />
       </div>

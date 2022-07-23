@@ -94,7 +94,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
         <label
           onClick={() => setShowProjectDetail(Project)}
           for="project-modal"
-          className="explore-btn mt-3"
+          className="explore-btn mt-4"
         >
           Explore More <BsArrowRight />
         </label>

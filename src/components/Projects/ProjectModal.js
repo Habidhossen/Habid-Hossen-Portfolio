@@ -50,6 +50,7 @@ const ProjectModal = ({ showProjectDetail }) => {
                   disableOnInteraction: false,
                 }}
                 pagination={{
+                  dynamicBullets: true,
                   clickable: true,
                 }}
                 modules={[Autoplay, Pagination]}
