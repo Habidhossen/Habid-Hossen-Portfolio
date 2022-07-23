@@ -38,7 +38,7 @@ const Contact = () => {
         <hr className="heading-underline-a" />
         <hr className="heading-underline-b" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-8 mb-12">
         <div className="col-span-2">
           <h1 className="contact-heading-title">Don't be shy!</h1>
           <p className="contact-heading-text">
@@ -119,6 +119,7 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* footer component */}
       <Footer />
     </section>
   );
