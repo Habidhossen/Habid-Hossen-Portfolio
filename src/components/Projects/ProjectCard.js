@@ -20,8 +20,6 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
     serverCodeLink,
   } = Project;
 
-  console.log(banner);
-
   return (
     <div>
       {/* project card */}
