@@ -44,10 +44,23 @@ const About = () => {
               <FaCheckCircle className="text-primary" />
               <span>City:</span> Chittagong, Bangladesh
             </p>
-            <p className="about-bullet">
-              <FaCheckCircle className="text-primary" />
-              <span>Education:</span> B.Sc. in CSE
-            </p>
+
+            {/* visible in PC or large devices */}
+            <div className="hidden md:block lg:block">
+              <p className="about-bullet">
+                <FaCheckCircle className="text-primary" />
+                <span>Education:</span> B.Sc. in Computer Science and
+                Engineering
+              </p>
+            </div>
+            {/* visible in Mobile or small devices */}
+            <div className="md:hidden lg:hidden">
+              <p className="about-bullet">
+                <FaCheckCircle className="text-primary" />
+                <span>Education:</span> B.Sc. in CSE
+              </p>
+            </div>
+
             <a href="tel:+8801854092871" className="about-bullet">
               <FaCheckCircle className="text-primary" />
               <span>WhatsApp:</span> +88 01854-092871

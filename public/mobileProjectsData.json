@@ -2,8 +2,12 @@
   {
     "id": 101,
     "type": "mobile",
-    "banner": "./assets/project-images/cgpa-calculator/banner.jpg",
-    "images": ["", "", ""],
+    "banner": "./assets/project-images/carspot/banner.png",
+    "images": [
+      "./assets/project-images/carspot/img1.png",
+      "./assets/project-images/carspot/img2.png",
+      "./assets/project-images/carspot/img3.png"
+    ],
     "projectTitle": "CGPA Calculator",
     "projectDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
     "shortDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
@@ -24,8 +28,12 @@
   {
     "id": 102,
     "type": "mobile",
-    "banner": "./assets/project-images/bmi-calculator/banner.jpg",
-    "images": ["", "", ""],
+    "banner": "./assets/project-images/carspot/banner.png",
+    "images": [
+      "./assets/project-images/carspot/img1.png",
+      "./assets/project-images/carspot/img2.png",
+      "./assets/project-images/carspot/img3.png"
+    ],
     "projectTitle": "BMI Calculator",
     "projectDesc": "BMI - The Body Mass Index calculates your body fat based on your weight and height and calculated with the standard formula also used by WHO.",
     "shortDesc": "BMI Calculator which calculate body fat with the standard formula.",
