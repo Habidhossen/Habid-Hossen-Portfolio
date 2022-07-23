@@ -70,14 +70,16 @@ const Header = () => {
     <header
       className={`${
         bg ? "bg-white h-[70px] shadow-sm" : "bg-bgColor h-[70px]"
-      } flex items-center fixed top-0 w-full text-black z-10 transition-all duration-300`}
+      } flex items-center fixed top-0 w-full text-black z-20 transition-all duration-300`}
     >
       <div className="w-full mx-auto px-6 md:px-28 lg:px-28 flex items-center justify-between">
         {/* logo */}
         <div>
-          <a href="#" className="nav-brand">
-            Habid's Portfolio
-          </a>
+          <span>
+            <a href="#" className="nav-brand">
+              Habid's Portfolio
+            </a>
+          </span>
         </div>
         {/* nav */}
         <div className="hidden md:block">

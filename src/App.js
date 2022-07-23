@@ -12,7 +12,10 @@ function App() {
       {/* <ParticlesBg
         type="color"
         num={1}
-        bg={{ position: "absolute", zIndex: 0 }}
+        bg={{
+          position: "absolute",
+          zIndex: 1,
+        }}
       /> */}
       <Header />
       <Banner />
