@@ -18,6 +18,11 @@
 .nav-link:focus {
   color: var(--primary);
 }
+.nav-items {
+  font-size: 16px;
+  color: var(--heading);
+  font-family: var(--jostFont);
+}
 
 .header-btn {
   background-color: blueviolet;

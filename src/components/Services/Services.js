@@ -23,10 +23,7 @@ import "../../assets/styles/style.css";
 
 const Services = () => {
   return (
-    <section
-      className="min-h-screen bg-white py-8 px-6 md:px-20 lg:px-28"
-      id="services"
-    >
+    <section className="bg-white py-8 px-6 md:px-20 lg:px-28" id="skills">
       <div className="my-12">
         <h1 className="section-title">
           My <span>Skills</span>
@@ -112,7 +109,7 @@ const Services = () => {
         <h1 className="skill-title">Tech I'm Familiar With</h1>
         <hr className="skill-title-underline" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-4 md:gap-x-10 lg:gap-x-10 gap-y-5">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-4 md:gap-x-10 lg:gap-x-10 gap-y-5 mb-14">
         {/* skill item */}
         <div className="skill-item-container">
           <img className="skill-item-icon" src={html} alt="" />

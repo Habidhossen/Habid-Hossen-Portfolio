@@ -10,10 +10,7 @@ import codingSVG from "../../assets/icons/coding.svg";
 
 const About = () => {
   return (
-    <section
-      className="min-h-screen bg-white py-8 px-6 md:px-20 lg:px-28"
-      id="about"
-    >
+    <section className="py-8 px-6 md:px-20 lg:px-28" id="about">
       <div className="my-12">
         <h1 className="section-title">
           <span>About</span> Me
@@ -62,12 +59,12 @@ const About = () => {
           </div>
 
           {/* Buttons Collection Div*/}
-          <div className="flex items-center gap-6 mt-6">
+          <div className="flex items-center gap-6 mt-6 mb-14">
             {/* Resume-Download Button */}
             <div>
               <a
                 href="https://drive.google.com/u/0/uc?id=1xrWjLAE-fspgWPeHByiF3LeOsHCbqxbo&export=download"
-                className="resume-btn"
+                className="resume-outline-btn"
                 rel="noreferrer"
               >
                 <FaCloudDownloadAlt />

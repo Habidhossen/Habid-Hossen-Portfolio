@@ -20,7 +20,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="min-h-screen py-8 px-6 md:px-20 lg:px-28" id="project">
+    <section className="py-8 px-6 md:px-20 lg:px-28 mb-14" id="projects">
       <div className="my-12">
         <h1 className="section-title">
           Recent <span>Projects</span>

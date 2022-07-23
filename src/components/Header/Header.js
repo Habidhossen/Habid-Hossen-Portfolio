@@ -15,27 +15,23 @@ const Header = () => {
   // navigation
   const navigation = [
     {
-      name: "home",
+      name: "Home",
       href: "#",
     },
     {
-      name: "about",
+      name: "About",
       href: "#about",
     },
     {
-      name: "skills",
+      name: "Skills",
       href: "#skills",
     },
     {
-      name: "project",
+      name: "Project",
       href: "#projects",
     },
     {
-      name: "blog",
-      href: "#blogs",
-    },
-    {
-      name: "contact",
+      name: "Contact",
       href: "#contact",
     },
   ];
@@ -73,7 +69,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? "bg-white h-[70px] shadow-sm" : "h-[70px]"
+        bg ? "bg-white h-[70px] shadow-sm" : "bg-bgColor h-[70px]"
       } flex items-center fixed top-0 w-full text-black z-10 transition-all duration-300`}
     >
       <div className="w-full mx-auto px-6 md:px-28 lg:px-28 flex items-center justify-between">
@@ -86,7 +82,7 @@ const Header = () => {
         {/* nav */}
         <div className="hidden md:block">
           <nav>
-            <ul className="flex space-x-8 uppercase text-[14px]">
+            <ul className="flex space-x-8 nav-items">
               {navigation.map((item, index) => {
                 return (
                   <li className="text-black cursor-pointer" key={index}>
@@ -110,7 +106,7 @@ const Header = () => {
         {/* nav mobile*/}
         <div className="md:hidden">
           {/* <NavMobile /> */}
-          <nav className="relative">
+          <nav className="nav-items">
             <div onClick={() => setIsOpen(true)} className="cursor-pointer ">
               {/* <MenuAlt3Icon className="w-8 h-8" /> */}
               <CgMenuRight className="h-6 w-6" />
@@ -121,7 +117,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className={`w-4 h-4 rounded-full bg-primary fixed top-0 right-0`}
+              className={`w-4 h-4 rounded-full bg-green fixed top-0 right-0`}
             ></motion.div>
 
             <motion.ul

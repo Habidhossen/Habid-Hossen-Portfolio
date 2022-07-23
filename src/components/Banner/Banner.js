@@ -4,7 +4,7 @@ import "../../assets/styles/style.css";
 
 const Banner = () => {
   return (
-    <section className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 mt-20 md:mt-0 lg:mt-0">
+    <section className="h-[700px] flex justify-center px-6 md:px-28 lg:px-28 py-28 md:py-0 lg:py-0">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {/* order-2 md:order-1 lg:order-1 */}
         <div className="flex flex-col justify-center banner-left">
@@ -20,7 +20,7 @@ const Banner = () => {
             and best code practices.
           </p>
           <div className="flex gap-3">
-            <a href="#about" className="resume-outline-btn">
+            <a href="#about" className="resume-btn">
               More Info
               <TiArrowSortedDown />
             </a>
