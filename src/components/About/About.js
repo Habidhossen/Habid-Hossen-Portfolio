@@ -74,6 +74,8 @@ const About = () => {
             {/* Social Buttons */}
             <div className="flex items-center gap-3">
               <a
+                className="tooltip"
+                data-tip="Github"
                 href="https://github.com/habidhossen"
                 target="_blank"
                 rel="noreferrer"
@@ -83,6 +85,8 @@ const About = () => {
                 </p>
               </a>
               <a
+                className="tooltip"
+                data-tip="Linkedin"
                 href="https://www.linkedin.com/in/habidhossen"
                 target="_blank"
                 rel="noreferrer"
@@ -92,6 +96,8 @@ const About = () => {
                 </p>
               </a>
               <a
+                className="tooltip tooltip-custom"
+                data-tip="Facebook"
                 href="https://facebook.com/habidhossen"
                 target="_blank"
                 rel="noreferrer"

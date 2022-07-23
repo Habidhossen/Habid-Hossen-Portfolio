@@ -6,6 +6,7 @@
     "images": ["", "", ""],
     "projectTitle": "CGPA Calculator",
     "projectDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
+    "shortDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
     "features": [
       "Simple UI",
       "Easy and attractive UX",
@@ -17,7 +18,8 @@
     ],
     "technologies": ["Android", "Java", "XML"],
     "liveLink": "https://www.amazon.com/dp/B099Q4JKZ2",
-    "githubCodeLink": "https://www.amazon.com/dp/B099Q4JKZ2"
+    "clientCodeLink": "https://github.com/Habidhossen/CGPA-Calculator",
+    "serverCodeLink": "https://github.com/Habidhossen/CGPA-Calculator"
   },
   {
     "id": 102,
@@ -26,6 +28,7 @@
     "images": ["", "", ""],
     "projectTitle": "BMI Calculator",
     "projectDesc": "BMI - The Body Mass Index calculates your body fat based on your weight and height and calculated with the standard formula also used by WHO.",
+    "shortDesc": "BMI Calculator which calculate body fat with the standard formula.",
     "features": [
       "Simple and user-friendly interface",
       "Easy and Free to use (no ads).",
@@ -37,6 +40,7 @@
     ],
     "technologies": ["Android", "Java", "XML"],
     "liveLink": "https://www.amazon.com/dp/B099QYGHPQ",
-    "githubCodeLink": "https://www.amazon.com/dp/B099QYGHPQ"
+    "clientCodeLink": "https://github.com/Habidhossen/BMI-Calculator",
+    "serverCodeLink": "https://github.com/Habidhossen/BMI-Calculator"
   }
 ]
