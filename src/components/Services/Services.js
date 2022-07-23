@@ -55,8 +55,8 @@ const Services = () => {
           </span>
           <h1 className="service-title">Web Development</h1>
           <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
+            I am a Full Stack Web Developer (MERN) and have quite some
+            experience in it as well.
           </p>
         </div>
         {/* service */}
@@ -79,8 +79,8 @@ const Services = () => {
           </span>
           <h1 className="service-title">App Development</h1>
           <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
+            I develop android applications using Java and learned React Native
+            to create cross-platform mobile applications.
           </p>
         </div>
         {/* service */}
@@ -103,8 +103,8 @@ const Services = () => {
           </span>
           <h1 className="service-title">Problem Solving</h1>
           <p className="service-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            exercitationem consequuntur est excepturi a obcaecati.
+            I love solving problems whether programming problems or real life
+            problems.
           </p>
         </div>
       </div>

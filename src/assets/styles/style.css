@@ -283,43 +283,54 @@
 }
 
 /* Contact.js */
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://1.bp.blogspot.com/-1gUx5GrHWbw/YJnW9L2ruYI/AAAAAAAAAI0/V_hWZ_JwtXIqCCpxInMyYAvWH7y7C4iBgCLcBGAsYHQ/s16000/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .contact-heading-title {
-  font-size: 28px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--heading);
+  color: white;
 }
 .contact-heading-text {
   font-size: 16px;
-  color: var(--text);
+  font-weight: 300;
+  color: whitesmoke;
   margin: 14px 0 32px;
 }
 .contact-title {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  color: var(--heading);
+  color: white;
 }
 .contact-text {
   font-size: 16px;
   font-weight: 600;
-  color: var(--heading);
+  color: white;
   margin-top: 4px;
 }
 input,
 textarea {
-  border: 1px solid #ddd;
+  border: 0.5px solid rgb(32, 32, 32);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: #f4f4f4 !important;
   border-radius: 30px;
   padding: 12px 20px !important;
   font-size: 14px !important;
 }
 ::placeholder {
-  color: red;
 }
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid var(--primary);
+  border: 0.5px solid #797979;
 }
 .send-msg-btn {
   margin-top: 20px;
@@ -348,7 +359,8 @@ footer {
   align-items: center;
   justify-content: center;
   font-family: var(--jostFont);
-  background-color: var(--greyBg);
+  color: #f4f4f4;
+  /* background-color: var(--greyBg); */
   height: 130px;
 }
 

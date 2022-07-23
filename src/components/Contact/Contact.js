@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import "../../assets/styles/style.css";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const form = useRef();
@@ -29,13 +30,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen py-6 px-6 md:px-20 lg:px-20" id="contact">
+    <section className="py-6 px-6 md:px-20 lg:px-20" id="contact">
       <div className="my-12">
-        <h1 className="section-title">
+        <h1 className="section-title text-white">
           Get In <span>Touch</span>
         </h1>
-        <hr className="heading-underline-a" />
-        <hr className="heading-underline-b" />
+        {/*  <hr className="heading-underline-a" />
+        <hr className="heading-underline-b" /> */}
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-5">
         <div className="col-span-2">
@@ -75,7 +76,7 @@ const Contact = () => {
         </div>
         <div className="col-span-3">
           <form ref={form} onSubmit={sendEmail}>
-            <div className="md:flex lg:flex gap-6">
+            <div className="md:flex lg:flex gap-4">
               <input
                 className="w-full md:w-1/2 lg:w-1/2 mb-6 md:mb-0 lg:mb-0"
                 type="text"
@@ -92,14 +93,14 @@ const Contact = () => {
               />
             </div>
             <input
-              className="w-full mt-6"
+              className="w-full mt-4"
               type="text"
               placeholder="Subject"
               name="subject"
               required
             />
             <textarea
-              className="w-full mt-6"
+              className="w-full mt-4"
               name="message"
               id=""
               cols="30"
@@ -113,6 +114,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <Footer />
     </section>
   );
 };
