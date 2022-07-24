@@ -86,6 +86,8 @@ const Header = () => {
               className="nav-brand"
             >
               Habid's Portfolio
+              <hr className="heading-underline-a" />
+              <hr className="heading-underline-b" />
             </Link>
           </span>
         </div>
@@ -117,9 +119,9 @@ const Header = () => {
         <div className="md:hidden">
           {/* <NavMobile /> */}
           <nav className="nav-items">
-            <div onClick={() => setIsOpen(true)} className="cursor-pointer ">
+            <div onClick={() => setIsOpen(true)} className="cursor-pointer">
               {/* <MenuAlt3Icon className="w-8 h-8" /> */}
-              <CgMenuRight className="h-6 w-6" />
+              <CgMenuRight className="h-6 w-6 text-headingBlack" />
             </div>
 
             {/* circle */}
@@ -127,7 +129,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className={`w-4 h-4 rounded-full bg-bgColor fixed top-0 right-0`}
+              className={`w-4 h-4 rounded-full bg-green fixed top-0 right-0`}
             ></motion.div>
 
             <motion.ul

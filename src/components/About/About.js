@@ -20,7 +20,7 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <div data-aos="fade-right" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <img src={codingSVG} alt="" />
         </div>
         <div>
@@ -72,7 +72,11 @@ const About = () => {
           </div>
 
           {/* Buttons Collection Div*/}
-          <div className="flex items-center gap-6 mt-6 mb-14">
+          <div
+            className="flex items-center gap-6 mt-6 mb-14"
+            data-aos="fade-zoom-in"
+            data-aos-duration="1000"
+          >
             {/* Resume-Download Button */}
             <div>
               <a

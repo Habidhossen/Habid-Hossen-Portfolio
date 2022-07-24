@@ -24,7 +24,7 @@ const Banner = () => {
           <div
             className="flex flex-col justify-center banner-left"
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
           >
             <h5 className="banner-subtitle">Hello, I'm</h5>
             <h1 className="banner-title">Habid Hossen</h1>
