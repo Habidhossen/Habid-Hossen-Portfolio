@@ -11,19 +11,20 @@
   color: var(--heading);
   font-size: 16px;
   font-weight: 800;
-}
-.nav-link:hover {
-  color: var(--primary);
-}
-.nav-link:focus {
-  color: var(--primary);
+  cursor: pointer;
 }
 .nav-items {
   font-size: 16px;
   color: var(--heading);
   font-family: var(--jostFont);
+  cursor: pointer;
 }
-
+.nav-items:hover {
+  color: var(--primary);
+}
+.nav-items-active {
+  color: var(--primary);
+}
 .header-btn {
   background-color: blueviolet;
   color: white;

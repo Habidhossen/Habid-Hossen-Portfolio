@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { BiX } from "react-icons/bi";
 import { CgMenuRight } from "react-icons/cg";
+import { Link } from "react-scroll";
 import "../../assets/styles/style.css";
 
 const Header = () => {
@@ -16,23 +17,23 @@ const Header = () => {
   const navigation = [
     {
       name: "Home",
-      href: "#",
+      href: "home",
     },
     {
       name: "About",
-      href: "#about",
+      href: "about",
     },
     {
       name: "Skills",
-      href: "#skills",
+      href: "skills",
     },
     {
-      name: "Project",
-      href: "#projects",
+      name: "Projects",
+      href: "projects",
     },
     {
       name: "Contact",
-      href: "#contact",
+      href: "contact",
     },
   ];
 
@@ -76,9 +77,16 @@ const Header = () => {
         {/* logo */}
         <div>
           <span>
-            <a href="#" className="nav-brand">
+            <Link
+              to="home"
+              activeClass="active"
+              spy="true"
+              smooth="true"
+              duration={1000}
+              className="nav-brand"
+            >
               Habid's Portfolio
-            </a>
+            </Link>
           </span>
         </div>
         {/* nav */}
@@ -88,17 +96,17 @@ const Header = () => {
               {navigation.map((item, index) => {
                 return (
                   <li className="text-black cursor-pointer" key={index}>
-                    <a
-                      href={item.href}
-                      activeclassName="active"
+                    <Link
+                      to={item.href}
+                      activeClass="nav-items-active"
                       spy="true"
                       smooth="true"
-                      duration={500}
-                      offset={-70}
-                      className="transition-all duration-300 nav-link"
+                      duration={800}
+                      offset={-20}
+                      className="nav-items"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
@@ -140,15 +148,17 @@ const Header = () => {
               {navigation.map((item, index) => {
                 return (
                   <li key={index} className="mb-8">
-                    <a
-                      href={item.href}
+                    <Link
+                      to={item.href}
+                      activeClass="nav-items-active"
+                      spy="true"
                       smooth="true"
-                      duration={500}
-                      offset={-70}
-                      className="text-xl cursor-pointer capitalize"
+                      duration={1000}
+                      offset={-20}
+                      className="nav-items"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

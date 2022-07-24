@@ -14,7 +14,10 @@ const Banner = () => {
           zIndex: 10,
         }}
       />
-      <section className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 py-28 md:py-0 lg:py-0">
+      <section
+        className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 py-28 md:py-0 lg:py-0"
+        id="home"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 z-10">
           {/* order-2 md:order-1 lg:order-1 */}
           <div className="flex flex-col justify-center banner-left">
