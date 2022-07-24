@@ -1,3 +1,4 @@
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import ParticlesBg from "particles-bg";
 import { TiArrowSortedDown } from "react-icons/ti";
 import profileImg from "../../assets/images/profile-img.jpg";
@@ -20,7 +21,11 @@ const Banner = () => {
       >
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 z-10">
           {/* order-2 md:order-1 lg:order-1 */}
-          <div className="flex flex-col justify-center banner-left">
+          <div
+            className="flex flex-col justify-center banner-left"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <h5 className="banner-subtitle">Hello, I'm</h5>
             <h1 className="banner-title">Habid Hossen</h1>
             <h5 className="banner-designation">
@@ -38,38 +43,13 @@ const Banner = () => {
                 <TiArrowSortedDown />
               </a>
             </div>
-            {/* <div className="flex gap-3">
-            <a
-              href="https://github.com/habidhossen"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="icon-bg">
-                <FaGithub />
-              </p>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/habidhossen"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="icon-bg">
-                <FaLinkedin />
-              </p>
-            </a>
-            <a
-              href="https://facebook.com/habidhossen"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="icon-bg">
-                <FaFacebook />
-              </p>
-            </a>
-          </div> */}
           </div>
           {/*  order-1 md:order-2 lg:order-2 */}
-          <div className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right">
+          <div
+            className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <div className="banner-img-div">
               <img className="banner-img" src={profileImg} alt="" />
             </div>

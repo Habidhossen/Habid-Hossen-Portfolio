@@ -20,11 +20,11 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
           <img src={codingSVG} alt="" />
         </div>
         <div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h1 className="about-title">
               Hey! I'm <span>Habid Hossen</span>
             </h1>
