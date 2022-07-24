@@ -142,15 +142,13 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className="cursor-pointer absolute top-8 right-8"
               >
-                {/* <XIcon className="w-8 h-8" /> */}
-                <BiX className="h-6 w-6" />
+                <BiX className="h-6 w-6 text-headingBlack" />
               </div>
               {navigation.map((item, index) => {
                 return (
                   <li key={index} className="mb-8">
                     <Link
                       to={item.href}
-                      activeClass="nav-items-active"
                       spy="true"
                       smooth="true"
                       duration={1000}

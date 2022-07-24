@@ -17,6 +17,7 @@ module.exports = {
         primary: "#f52225",
         green: "#1cbe59",
         bgColor: "#f9f9ff",
+        headingBlack: "#0f172a",
       },
     },
   },
