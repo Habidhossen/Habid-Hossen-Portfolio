@@ -127,7 +127,7 @@ const Header = () => {
               variants={circleVariants}
               initial="hidden"
               animate={isOpen ? "visible" : "hidden"}
-              className={`w-4 h-4 rounded-full bg-green fixed top-0 right-0`}
+              className={`w-4 h-4 rounded-full bg-bgColor fixed top-0 right-0`}
             ></motion.div>
 
             <motion.ul
