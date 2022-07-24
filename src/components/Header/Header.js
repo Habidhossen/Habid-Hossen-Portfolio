@@ -86,8 +86,6 @@ const Header = () => {
               className="nav-brand"
             >
               Habid's Portfolio
-              <hr className="heading-underline-a" />
-              <hr className="heading-underline-b" />
             </Link>
           </span>
         </div>
