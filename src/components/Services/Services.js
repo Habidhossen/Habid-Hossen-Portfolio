@@ -33,11 +33,7 @@ const Services = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-12">
         {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="flex flex-col items-center text-center">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +57,7 @@ const Services = () => {
           </p>
         </div>
         {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="flex flex-col items-center text-center">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +81,7 @@ const Services = () => {
           </p>
         </div>
         {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="flex flex-col items-center text-center">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,15 +105,11 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="mt-14 mb-8" data-aos="fade-up" data-aos-duration="1000">
+      <div className="mt-10 mb-8">
         <h1 className="skill-title">Tech I'm Familiar With</h1>
         <hr className="skill-title-underline" />
       </div>
-      <div
-        className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-4 md:gap-x-10 lg:gap-x-10 gap-y-5 mb-14"
-        data-aos="zoom-out-up"
-        data-aos-duration="1000"
-      >
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-x-4 md:gap-x-10 lg:gap-x-10 gap-y-5 mb-14">
         {/* skill item */}
         <div className="skill-item-container">
           <img className="skill-item-icon" src={html} alt="" />
