@@ -16,7 +16,7 @@ const Banner = () => {
         }}
       />
       <section
-        className="min-h-screen flex justify-center px-6 md:px-28 lg:px-28 py-28 md:py-0 lg:py-0"
+        className="min-h-screen flex justify-center px-6 md:px-20 lg:px-28 py-28 md:py-0 lg:py-0"
         id="home"
       >
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 z-10">
@@ -45,11 +45,7 @@ const Banner = () => {
             </div>
           </div>
           {/*  order-1 md:order-2 lg:order-2 */}
-          <div
-            className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right">
             <div className="banner-img-div">
               <img className="banner-img" src={profileImg} alt="" />
             </div>

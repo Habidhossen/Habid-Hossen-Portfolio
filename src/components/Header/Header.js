@@ -95,7 +95,7 @@ const Header = () => {
             <ul className="flex space-x-8 nav-items">
               {navigation.map((item, index) => {
                 return (
-                  <li className="text-black cursor-pointer" key={index}>
+                  <li key={index}>
                     <Link
                       to={item.href}
                       activeClass="nav-items-active"
