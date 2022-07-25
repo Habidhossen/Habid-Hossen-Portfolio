@@ -72,11 +72,7 @@ const About = () => {
           </div>
 
           {/* Buttons Collection Div*/}
-          <div
-            className="flex items-center gap-6 mt-6 mb-14"
-            data-aos="fade-zoom-in"
-            data-aos-duration="1000"
-          >
+          <div className="flex items-center gap-6 mt-6 mb-14">
             {/* Resume-Download Button */}
             <div>
               <a

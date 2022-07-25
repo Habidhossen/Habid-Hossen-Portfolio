@@ -115,6 +115,7 @@
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
   color: white;
+  cursor: pointer;
   transition: 0.5s;
 }
 .resume-btn:hover {

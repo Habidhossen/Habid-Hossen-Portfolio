@@ -1,6 +1,7 @@
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import ParticlesBg from "particles-bg";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { Link } from "react-scroll";
 import profileImg from "../../assets/images/profile-img.jpg";
 import "../../assets/styles/style.css";
 
@@ -38,10 +39,17 @@ const Banner = () => {
               and best code practices.
             </p>
             <div className="flex gap-3">
-              <a href="#about" className="resume-btn">
+              <Link
+                to="about"
+                spy="true"
+                smooth="true"
+                duration={1000}
+                offset={-20}
+                className="resume-btn"
+              >
                 More Info
                 <TiArrowSortedDown />
-              </a>
+              </Link>
             </div>
           </div>
           {/*  order-1 md:order-2 lg:order-2 */}
