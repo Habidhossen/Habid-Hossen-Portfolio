@@ -33,46 +33,57 @@ const About = () => {
               and a Computer Science and Engineering student from Chittagong,
               Bangladesh.
             </p>
-            <p className="about-desc">
+            <p
+              className="about-desc"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               I have experience in Front-end (HTML, CSS, JavaScript, React.Js),
               Back-end (Node.Js, Express.Js, PHP), Android App (Java), Databases
               (MongoDB, MySQL) and UI/UX designs (Figma). I like to Code,
               Design, Innovate and Experiment. I am an enthusiastic and social
               person who loves taking on new challenges and learning new skills.
             </p>
-            <p className="about-bullet">
-              <FaCheckCircle className="text-primary" />
-              <span>City:</span> Chittagong, Bangladesh
-            </p>
 
-            {/* visible in PC or large devices */}
-            <div className="hidden md:block lg:block">
+            <div data-aos="fade-up" data-aos-duration="1000">
               <p className="about-bullet">
                 <FaCheckCircle className="text-primary" />
-                <span>Education:</span> B.Sc. in Computer Science and
-                Engineering
+                <span>City:</span> Chittagong, Bangladesh
               </p>
-            </div>
-            {/* visible in Mobile or small devices */}
-            <div className="md:hidden lg:hidden">
-              <p className="about-bullet">
-                <FaCheckCircle className="text-primary" />
-                <span>Education:</span> B.Sc. in CSE
-              </p>
-            </div>
 
-            <a href="tel:+8801854092871" className="about-bullet">
-              <FaCheckCircle className="text-primary" />
-              <span>WhatsApp:</span> +88 01854-092871
-            </a>
-            <a href="mailto:habidhossen2@gmail.com" className="about-bullet">
-              <FaCheckCircle className="text-primary" />
-              <span>Email:</span> habidhossen2@gmail.com
-            </a>
+              {/* visible in PC or large devices */}
+              <div className="hidden md:block lg:block">
+                <p className="about-bullet">
+                  <FaCheckCircle className="text-primary" />
+                  <span>Education:</span> B.Sc. in Computer Science and
+                  Engineering
+                </p>
+              </div>
+              {/* visible in Mobile or small devices */}
+              <div className="md:hidden lg:hidden">
+                <p className="about-bullet">
+                  <FaCheckCircle className="text-primary" />
+                  <span>Education:</span> B.Sc. in CSE
+                </p>
+              </div>
+
+              <a href="tel:+8801854092871" className="about-bullet">
+                <FaCheckCircle className="text-primary" />
+                <span>WhatsApp:</span> +88 01854-092871
+              </a>
+              <a href="mailto:habidhossen2@gmail.com" className="about-bullet">
+                <FaCheckCircle className="text-primary" />
+                <span>Email:</span> habidhossen2@gmail.com
+              </a>
+            </div>
           </div>
 
           {/* Buttons Collection Div*/}
-          <div className="flex items-center gap-6 mt-6 mb-14">
+          <div
+            className="flex items-center gap-6 mt-6 mb-14"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
             {/* Resume-Download Button */}
             <div>
               <a

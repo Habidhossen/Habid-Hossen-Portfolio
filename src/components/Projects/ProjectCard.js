@@ -23,7 +23,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
   return (
     <div>
       {/* project card */}
-      <div className="project-card" data-aos="fade-up" data-aos-duration="1000">
+      <div className="project-card" data-aos="fade-up" data-aos-duration="2000">
         {/* <img src={banner} alt="" /> */}
 
         <Swiper

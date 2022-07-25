@@ -54,7 +54,11 @@ const Banner = () => {
           </div>
           {/*  order-1 md:order-2 lg:order-2 */}
           <div className="flex justify-center items-center p-10 md:p-0 lg:p-0 banner-right">
-            <div className="banner-img-div">
+            <div
+              className="banner-img-div"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <img className="banner-img" src={profileImg} alt="" />
             </div>
           </div>
