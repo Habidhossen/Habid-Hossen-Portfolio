@@ -2,11 +2,12 @@
   {
     "id": 101,
     "type": "mobile",
-    "banner": "./assets/project-images/carspot/banner.png",
+    "banner": "./assets/project-images/cgpa-calculator/banner.png",
     "images": [
-      "./assets/project-images/carspot/img1.png",
-      "./assets/project-images/carspot/img2.png",
-      "./assets/project-images/carspot/img3.png"
+      "./assets/project-images/cgpa-calculator/banner.png",
+      "./assets/project-images/cgpa-calculator/img1.png",
+      "./assets/project-images/cgpa-calculator/img2.png",
+      "./assets/project-images/cgpa-calculator/img3.png"
     ],
     "projectTitle": "CGPA Calculator",
     "projectDesc": "A very simple, offline and effective CGPA Calculator app for University Students.",
@@ -28,11 +29,13 @@
   {
     "id": 102,
     "type": "mobile",
-    "banner": "./assets/project-images/carspot/banner.png",
+    "banner": "./assets/project-images/bmi-calculator/banner.png",
     "images": [
-      "./assets/project-images/carspot/img1.png",
-      "./assets/project-images/carspot/img2.png",
-      "./assets/project-images/carspot/img3.png"
+      "./assets/project-images/bmi-calculator/banner.png",
+      "./assets/project-images/bmi-calculator/img1.png",
+      "./assets/project-images/bmi-calculator/img2.png",
+      "./assets/project-images/bmi-calculator/img3.png",
+      "./assets/project-images/bmi-calculator/img4.png"
     ],
     "projectTitle": "BMI Calculator",
     "projectDesc": "BMI - The Body Mass Index calculates your body fat based on your weight and height and calculated with the standard formula also used by WHO.",

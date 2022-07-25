@@ -275,10 +275,13 @@
 }
 .project-card {
   background-color: white;
-  /* padding: 12px; */
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.project-thumbnail {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 12px;
 }
 .project-title {
   font-family: var(--jostFont);
@@ -301,20 +304,6 @@
   cursor: pointer;
 }
 .project-btn {
-  /* display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5px 0;
-  gap: 3px;
-  border-radius: 50px;
-  font-size: 12px;
-  background-color: var(--green);
-  border: 1px solid var(--green);
-  font-family: var(--jostFont);
-  color: white;
-  transition: 0.2s; */
   display: flex;
   width: 100%;
   align-items: center;
@@ -337,8 +326,6 @@
   transition: 0.5s;
 }
 .project-btn:hover {
-  /* background-color: var(--green);
-  color: white; */
   background-position: right center; /* change the direction of the change here */
   color: #fff;
 }
@@ -367,9 +354,6 @@
 .explore-btn:hover {
   background-position: right center; /* change the direction of the change here */
 }
-/* .explore-btn:hover {
-  background-color: var(--primary);
-} */
 .project-footer-btn {
   display: flex;
   align-items: center;

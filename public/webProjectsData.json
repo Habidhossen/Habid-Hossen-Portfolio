@@ -2,11 +2,18 @@
   {
     "id": 1,
     "type": "web",
-    "banner": "./assets/project-images/carspot/banner.png",
+    "banner": "./assets/project-images/apparatus-store/banner.png",
     "images": [
-      "./assets/project-images/carspot/img1.png",
-      "./assets/project-images/carspot/img2.png",
-      "./assets/project-images/carspot/img3.png"
+      "./assets/project-images/apparatus-store/banner.png",
+      "./assets/project-images/apparatus-store/img1.png",
+      "./assets/project-images/apparatus-store/img2.png",
+      "./assets/project-images/apparatus-store/img3.png",
+      "./assets/project-images/apparatus-store/img4.png",
+      "./assets/project-images/apparatus-store/img5.png",
+      "./assets/project-images/apparatus-store/img6.png",
+      "./assets/project-images/apparatus-store/img7.png",
+      "./assets/project-images/apparatus-store/img8.png",
+      "./assets/project-images/apparatus-store/img9.png"
     ],
     "projectTitle": "Apparatus Store",
     "projectDesc": "Apparatus Store is a manufacturer's website where customers can order tools like metalwork tools, electric tools, etc. After successfully ordering, customers can pay and get further process about their products/tools.",
@@ -44,9 +51,15 @@
     "type": "web",
     "banner": "./assets/project-images/carspot/banner.png",
     "images": [
+      "./assets/project-images/carspot/banner.png",
       "./assets/project-images/carspot/img1.png",
       "./assets/project-images/carspot/img2.png",
-      "./assets/project-images/carspot/img3.png"
+      "./assets/project-images/carspot/img3.png",
+      "./assets/project-images/carspot/img4.png",
+      "./assets/project-images/carspot/img5.png",
+      "./assets/project-images/carspot/img6.png",
+      "./assets/project-images/carspot/img7.png",
+      "./assets/project-images/carspot/img8.png"
     ],
     "projectTitle": "CarSpot - Wheels and Deals",
     "projectDesc": "CarSpot - Wheels and Deals is a car warehouse website that deals with cars. It's basically a warehouse/dealership based website where stored products and manage it.",
@@ -70,11 +83,12 @@
   {
     "id": 3,
     "type": "web",
-    "banner": "./assets/project-images/carspot/banner.png",
+    "banner": "./assets/project-images/travel-to-go/banner.png",
     "images": [
-      "./assets/project-images/carspot/img1.png",
-      "./assets/project-images/carspot/img2.png",
-      "./assets/project-images/carspot/img3.png"
+      "./assets/project-images/travel-to-go/banner.png",
+      "./assets/project-images/travel-to-go/img2.png",
+      "./assets/project-images/travel-to-go/img3.png",
+      "./assets/project-images/travel-to-go/img4.png"
     ],
     "projectTitle": "Travel To Go",
     "projectDesc": "The Travel To Go Website is especially for tourists who want a tour guide for their next adventure trip. Where a single tour guide provides many facilities. Tourists can get all services like Zip Lines, Kayaking, Bungee Jump, etc.",

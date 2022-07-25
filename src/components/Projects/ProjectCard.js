@@ -24,7 +24,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
     <div>
       {/* project card */}
       <div className="project-card" data-aos="fade-up" data-aos-duration="2000">
-        {/* <img src={banner} alt="" /> */}
+        {/* <img className="project-thumbnail" src={banner} alt="" /> */}
 
         <Swiper
           spaceBetween={30}
@@ -36,6 +36,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
             disableOnInteraction: false,
           }}
           pagination={{
+            dynamicBullets: true,
             clickable: true,
           }}
           modules={[Autoplay, Pagination]}
