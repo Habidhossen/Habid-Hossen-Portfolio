@@ -24,17 +24,17 @@ const ProjectModal = ({ showProjectDetail }) => {
 
   return (
     <div>
-      <input type="checkbox" id="project-modal" class="modal-toggle" />
-      <div class="modal">
-        <div class="modal-box w-11/12 max-w-full">
+      <input type="checkbox" id="project-modal" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box w-11/12 max-w-full">
           <label
-            for="project-modal"
-            class="btn btn-sm btn-circle bg-[#f52225] border-0 absolute right-2 top-2"
+            htmlFor="project-modal"
+            className="btn btn-sm btn-circle bg-[#f52225] border-0 absolute right-2 top-2"
           >
             ✕
           </label>
           {/* modal title */}
-          <h3 class="font-bold text-lg mb-6">{projectTitle}</h3>
+          <h3 className="font-bold text-lg mb-6">{projectTitle}</h3>
 
           {/* modal container */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

@@ -9,9 +9,13 @@
 /* Header.js */
 .nav-brand {
   color: var(--heading);
-  font-size: 16px;
-  font-weight: 800;
+  font-family: "Charmonman", cursive;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
+}
+.nav-brand span {
+  color: var(--primary);
 }
 .nav-items {
   font-size: 16px;
@@ -123,7 +127,6 @@
   color: var(--primary);
 }
 .about-me-btn {
-  /* margin-top: 20px; */
   display: flex;
   width: fit-content;
   align-items: center;
@@ -134,10 +137,7 @@
   background-color: var(--primary);
   font-family: var(--jostFont);
   color: white;
-  transition: 0.1s;
-  /* box-shadow: 0px 23px 44px 1px rgba(255, 124, 106, 0.48);
-  -webkit-box-shadow: 0px 23px 44px 1px rgba(255, 109, 109, 0.48);
-  -moz-box-shadow: 0px 23px 44px 1px rgba(255, 109, 109, 0.48); */
+  transition: 0.5s;
 }
 
 .banner-img-div {
@@ -238,6 +238,7 @@
   width: 30px;
   height: 3px;
   background-color: red;
+  border: none;
 }
 .skill-item-container {
   display: flex;
@@ -248,6 +249,10 @@
   padding: 16px 0;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.skill-item-container:hover {
+  transform: translateX(0px) translateY(-8px);
 }
 .skill-item-title {
   font-size: 14px;
@@ -278,6 +283,7 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  cursor: pointer;
 }
 .project-thumbnail {
   border-radius: 10px 10px 0 0;
@@ -455,13 +461,11 @@
 input,
 textarea {
   border: 0.5px solid rgb(32, 32, 32);
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: rgba(20, 20, 20, 0.8);
   color: #f4f4f4 !important;
   border-radius: 30px;
   padding: 12px 20px !important;
   font-size: 14px !important;
-}
-::placeholder {
 }
 input:focus,
 textarea:focus {
@@ -482,7 +486,7 @@ textarea:focus {
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
   color: white;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .send-msg-btn:hover {
   background-color: transparent !important;
@@ -501,7 +505,7 @@ footer {
   height: 130px;
 }
 
-/* responsive */
+/* responsive for Mobile or Small devices */
 @media screen and (max-width: 576px) {
   .banner-title {
     font-size: 38px;
@@ -517,6 +521,14 @@ footer {
   .banner-designation {
     font-size: 18px;
   }
+  .banner-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* responsive for Tablet or Medium devices */
+@media only screen and (min-width: 576px) and (max-width: 960px) {
   .banner-left {
     display: flex;
     align-items: center;

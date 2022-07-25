@@ -85,7 +85,7 @@ const Header = () => {
               duration={1000}
               className="nav-brand"
             >
-              Habid's Portfolio
+              <span>Habid</span> Hossen
             </Link>
           </span>
         </div>

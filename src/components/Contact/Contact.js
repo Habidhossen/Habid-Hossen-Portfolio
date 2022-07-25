@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
-import { toast, ToastContainer } from "react-toastify";
+import { Slide, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../assets/styles/style.css";
 import Footer from "../Footer/Footer";
@@ -28,8 +28,8 @@ const Contact = () => {
           // show toast message
           toast.success("Message Sent Successfully!", {
             position: "bottom-center",
-            theme: "colored",
-            autoClose: 2000,
+            autoClose: 3000,
+            transition: Slide,
           });
         },
         (error) => {
