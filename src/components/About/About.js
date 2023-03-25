@@ -83,12 +83,13 @@ const About = () => {
             className="flex items-center gap-6 mt-6 mb-14"
             data-aos="flip-down"
             data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           >
             {/* Resume-Download Button */}
             <div>
               <a
                 href="https://drive.google.com/u/0/uc?id=1xrWjLAE-fspgWPeHByiF3LeOsHCbqxbo&export=download"
-                className="resume-outline-btn"
+                className="resume-btn"
                 rel="noreferrer"
               >
                 <FaCloudDownloadAlt />

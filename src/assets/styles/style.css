@@ -207,6 +207,7 @@
   border: 1px solid var(--primary);
   font-family: var(--jostFont);
   color: var(--primary);
+  cursor: pointer;
   transition: 0.5s;
 }
 .resume-outline-btn:hover {
@@ -282,7 +283,8 @@
   background-color: white;
   border-radius: 10px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   cursor: pointer;
 }
 .project-thumbnail {

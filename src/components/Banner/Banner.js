@@ -45,7 +45,7 @@ const Banner = () => {
                 smooth="true"
                 duration={1000}
                 offset={-20}
-                className="resume-btn"
+                className="resume-outline-btn"
               >
                 More Info
                 <TiArrowSortedDown />

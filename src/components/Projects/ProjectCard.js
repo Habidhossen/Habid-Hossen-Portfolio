@@ -44,7 +44,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
         >
           {images?.map((img, index) => (
             <SwiperSlide key={index}>
-              <img src={img} alt="" />
+              <img className="rounded-lg" src={img} alt="" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -58,7 +58,7 @@ const ProjectCard = ({ Project, setShowProjectDetail }) => {
             ))}
           </div>
           <h1 className="project-title">{projectTitle}</h1>
-          <p className="project-text">{shortDesc}</p>
+          <p className="project-text">{projectDesc.slice(0, 90) + " ..."}</p>
           <div className="flex justify-between mt-7 gap-2">
             <a
               className="project-btn"

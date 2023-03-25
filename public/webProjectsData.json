@@ -13,19 +13,23 @@
       "./assets/project-images/apparatus-store/img6.png",
       "./assets/project-images/apparatus-store/img7.png",
       "./assets/project-images/apparatus-store/img8.png",
-      "./assets/project-images/apparatus-store/img9.png"
+      "./assets/project-images/apparatus-store/img9.png",
+      "./assets/project-images/apparatus-store/img10.png",
+      "./assets/project-images/apparatus-store/img11.png",
+      "./assets/project-images/apparatus-store/img12.png",
+      "./assets/project-images/apparatus-store/img13.png"
     ],
     "projectTitle": "Apparatus Store",
-    "projectDesc": "Apparatus Store is a manufacturer's website where customers can order tools like metalwork tools, electric tools, etc. After successfully ordering, customers can pay and get further process about their products/tools.",
+    "projectDesc": "Apparatus Store is a manufacturer's website that specializes in selling a variety of tools, including metalwork tools, electric tools, and more. Customers can easily browse the site and place orders for the tools they need. Once an order has been successfully placed, customers can proceed to the payment process, and they will receive further information about their products/tools.",
     "shortDesc": "A manufacturer's website where customers can order tools and manages tools.",
     "features": [
-      "Customers/users can view product/tool information. They can order, cancel and pay.",
-      "Users can view, edit their profile and update info. Users/customers also add reviews about products which will show on the home page and everyone see it. But before this process users have must be logged in.",
-      "Admin can access some special features like add a new product, delete a product, cancel the order, change order status, make an admin, etc. Basically, the admin has full access to this website and controls it.",
-      "This site has two authentication systems which is a Google login and another is an Email-Password based login system which controls by Firebase so it's secured. And MongoDB is used as a Database so users can get a better experience because MongoDB is flexible and handles a variety of data and a huge amounts of data.",
-      "There are two more different sections on this site for giving extra benefits to customers/users, which are the Latest Blog section where users get the latest blog/article about tools and products and another section is the Contact form where customers/users can contact with authority and feedback too.",
-      "Responsive and Attractive user interface and user-friendly website.",
-      "This site build with React.js, Node.js, Express.js, MongoDB, Firebase, Stripe(payment system) and many more."
+      "This website offers customers the ability to browse and view detailed information about all available products, as well as place, cancel, and pay for orders.",
+      "In addition to product listings, customers can also explore a range of blogs and news articles that provide the latest updates on products and tools. They can also read and leave reviews and ratings about products and the overall quality of the site.",
+      "Customers can manage their profiles and access a wealth of information about the products and tools available on the site.",
+      "The website administrator has complete control over all site functionality, including the ability to add or remove products and tools, add and remove blogs, cancel orders, change order statuses, and promote other users to admin status.",
+      "To enhance security, the website uses two-factor authentication with both Google login and an email-password-based login system, which is managed through Firebase.",
+      "The website relies on MongoDB as its database. This popular NoSQL database is highly flexible and can efficiently handle large amounts of data.",
+      "The site's user interface is both visually appealing and intuitive, built with React and React-Router. It features a responsive design created with Tailwind CSS and Daisy UI, as well as loading animations using React Spinners and notification displays with React Toastify. Authentication is managed through Firebase, and secure payments are facilitated by Stripe."
     ],
     "technologies": [
       "React",
@@ -33,14 +37,15 @@
       "Node",
       "MongoDB",
       "Express",
+      "Stripe",
       "Tailwind CSS",
       "Daisy UI",
       "React-Router",
-      "React Firebase Hooks",
-      "React Hook Form",
-      "React Query",
-      "Stripe",
-      "React Toastify"
+      "React-Firebase-Hooks",
+      "React-Hook-Form",
+      "React-Query",
+      "React-Spinners",
+      "React-Toastify"
     ],
     "liveLink": "https://apparatus-store-f3edc.web.app/",
     "clientCodeLink": "https://github.com/Habidhossen/Apparatus-Store-Client",
@@ -48,6 +53,62 @@
   },
   {
     "id": 2,
+    "type": "web",
+    "banner": "./assets/project-images/vacation-go/banner.png",
+    "images": [
+      "./assets/project-images/vacation-go/banner.png",
+      "./assets/project-images/vacation-go/img1.png",
+      "./assets/project-images/vacation-go/img2.png",
+      "./assets/project-images/vacation-go/img3.png",
+      "./assets/project-images/vacation-go/img4.png",
+      "./assets/project-images/vacation-go/img5.png",
+      "./assets/project-images/vacation-go/img6.png",
+      "./assets/project-images/vacation-go/img7.png",
+      "./assets/project-images/vacation-go/img8.png",
+      "./assets/project-images/vacation-go/img9.png",
+      "./assets/project-images/vacation-go/img10.png",
+      "./assets/project-images/vacation-go/img11.png",
+      "./assets/project-images/vacation-go/img12.png"
+    ],
+    "projectTitle": "Vacation Go",
+    "projectDesc": "Vacation Go Website is mainly for tourists who want a guide for their adventure trip. Where a single tourist guide provides many facilities, tourists can get all services like Parasailing, Cliff Jumping, Jet Skiing, Surfing, Beach Sports, Horseback Riding, Kayaking, Scuba Diving, and many more on a single platform.",
+    "shortDesc": "This website is especially for tourists who want a tourist guide for their trip.",
+    "features": [
+      "Tourists can view all Services and confirm the Booking.",
+      "Tourists can view previous trip Blogs and Reviews from other travelers. which can provide valuable insights and recommendations for planning their own adventures. And also give their valuable reviews.",
+      "Tourists can view their profile, get any offers news section, subscribe to the email section, and much more info about the tour guide and his services.",
+      "The website's admin has full access to all functionalities, including adding and deleting services and blogs, canceling bookings, promoting other users to admin, viewing all bookings, and overall control of the website.",
+      "This website uses two-factor authentication with Google login and an Email-Password-based login system controlled by Firebase, which helps improve security.",
+      "MongoDB is used as the database for this website. MongoDB is a popular NoSQL database that is known for its flexibility and ability to handle large amounts of data. Mongoose is also used, which simplifies data modeling and database operations in Node.js.",
+      "The backend architecture of this website follows the MVC (Model-View-Controller) pattern, where specific parts of the code are assigned different roles to perform different tasks.",
+      "This website has a user-friendly and attractive interface, built using React and React-Router, with responsive design created using Tailwind CSS and Daisy UI, and enhanced with React CountUp, AOS for animations, React Spinners, and React Toastify for displaying notifications."
+    ],
+    "technologies": [
+      "React",
+      "Firebase",
+      "Node",
+      "MongoDB",
+      "Mongoose",
+      "Express",
+      "MVC Architecture",
+      "Tailwind CSS",
+      "Daisy UI",
+      "React-Router",
+      "React-Firebase-Hooks",
+      "React-Hook-Form",
+      "React-Query",
+      "React-Spinners",
+      "React-Toastify",
+      "React-Countup",
+      "AOS",
+      "Swiper"
+    ],
+    "liveLink": "https://vacation-go-fd165.web.app/",
+    "clientCodeLink": "https://github.com/Habidhossen/Vacation-Go-Client",
+    "serverCodeLink": "https://github.com/Habidhossen/Vacation-Go-Server"
+  },
+  {
+    "id": 3,
     "type": "web",
     "banner": "./assets/project-images/carspot/banner.png",
     "images": [
@@ -79,38 +140,5 @@
     "liveLink": "https://carspot-wheels-and-deals.web.app/",
     "clientCodeLink": "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Client",
     "serverCodeLink": "https://github.com/Habidhossen/CarSpot-Wheels-and-Deals-Server"
-  },
-  {
-    "id": 3,
-    "type": "web",
-    "banner": "./assets/project-images/travel-to-go/banner.png",
-    "images": [
-      "./assets/project-images/travel-to-go/banner.png",
-      "./assets/project-images/travel-to-go/img2.png",
-      "./assets/project-images/travel-to-go/img3.png",
-      "./assets/project-images/travel-to-go/img4.png"
-    ],
-    "projectTitle": "Travel To Go",
-    "projectDesc": "The Travel To Go Website is especially for tourists who want a tour guide for their next adventure trip. Where a single tour guide provides many facilities. Tourists can get all services like Zip Lines, Kayaking, Bungee Jump, etc.",
-    "shortDesc": "This website is especially for tourists who want a tour guide for their trip.",
-    "features": [
-      "Tourists can get all services via single platform.",
-      "This website is protected with a Firebase Login System. So users do have not to worry about the security system.",
-      "User can login with Google.",
-      "Tourists can contact with tour guide via message form.",
-      "Responsive and Attractive user interface and user-friendly site.",
-      "This site build with React, React-Router, Firebase and Bootstrap."
-    ],
-    "technologies": [
-      "React",
-      "Firebase",
-      "Bootstrap",
-      "React-Router",
-      "React Firebase Hooks",
-      "React Toastify"
-    ],
-    "liveLink": "https://travel-to-go-6c371.web.app/",
-    "clientCodeLink": "https://github.com/Habidhossen/Travel-To-Go",
-    "serverCodeLink": "https://github.com/Habidhossen/Travel-To-Go"
   }
 ]
