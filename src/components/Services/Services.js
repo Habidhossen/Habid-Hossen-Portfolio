@@ -18,10 +18,105 @@ import postman from "../../assets/icons/postman.svg";
 import react from "../../assets/icons/reactjs.svg";
 import tailwindcss from "../../assets/icons/tailwindcss.svg";
 import vscode from "../../assets/icons/vscode.svg";
-
 import "../../assets/styles/style.css";
 
 const Services = () => {
+  // service items
+  const serviceItems = [
+    {
+      title: "Web Development",
+      description:
+        "I am a Full Stack Web Developer (MERN) and have quite some experience in it as well.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="1"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "App Development",
+      description:
+        "I develop Android applications using Java and learned React Native to create cross-platform mobile applications.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="1"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Problem Solving",
+      description:
+        "I love solving problems whether programming problems or real-life problems.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="1"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
+        </svg>
+      ),
+    },
+  ];
+
+  // skill items
+  const skillItems = [
+    { icon: html, title: "HTML" },
+    { icon: css, title: "CSS" },
+    { icon: bootstrap, title: "Bootstrap" },
+    { icon: tailwindcss, title: "Tailwind CSS" },
+    { icon: materialui, title: "Material UI" },
+    { icon: materialui, title: "Ant Design" },
+    { icon: javascript, title: "JavaScript" },
+    { icon: javascript, title: "TypeScript" },
+    { icon: react, title: "React.js" },
+    { icon: react, title: "Next.js" },
+    { icon: node, title: "Node.js" },
+    { icon: css, title: "Express.js" },
+    { icon: mongodb, title: "MongoDB" },
+    { icon: mysql, title: "MySQL" },
+    { icon: mysql, title: "PostgreSQL" },
+    { icon: mysql, title: "Prisma" },
+    { icon: firebase, title: "Firebase" },
+    { icon: cpp, title: "C++" },
+    { icon: java, title: "Python" },
+    { icon: php, title: "PHP" },
+    { icon: git, title: "Git" },
+    { icon: npm, title: "NPM" },
+    { icon: postman, title: "Postman" },
+    { icon: androidstudio, title: "Android Studio" },
+    { icon: vscode, title: "VS Code" },
+  ];
+
   return (
     <section className="bg-white py-8 px-6 md:px-20 lg:px-28" id="skills">
       <div className="my-12">
@@ -33,89 +128,18 @@ const Services = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-12">
         {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-          </span>
-          <h1 className="service-title">Web Development</h1>
-          <p className="service-desc">
-            I am a Full Stack Web Developer (MERN) and have quite some
-            experience in it as well.
-          </p>
-        </div>
-        {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-              />
-            </svg>
-          </span>
-          <h1 className="service-title">App Development</h1>
-          <p className="service-desc">
-            I develop android applications using Java and learned React Native
-            to create cross-platform mobile applications.
-          </p>
-        </div>
-        {/* service */}
-        <div
-          className="flex flex-col items-center text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              />
-            </svg>
-          </span>
-          <h1 className="service-title">Problem Solving</h1>
-          <p className="service-desc">
-            I love solving problems whether programming problems or real life
-            problems.
-          </p>
-        </div>
+        {serviceItems.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span>{service?.icon}</span>
+            <h1 className="service-title">{service?.title}</h1>
+            <p className="service-desc">{service?.description}</p>
+          </div>
+        ))}
       </div>
       <div
         className="mt-10 mb-8"
@@ -130,125 +154,17 @@ const Services = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={html} alt="" />
-          <p className="skill-item-title">HTML</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={css} alt="" />
-          <p className="skill-item-title">CSS</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={bootstrap} alt="" />
-          <p className="skill-item-title">Bootstrap</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={tailwindcss} alt="" />
-          <p className="skill-item-title">Tailwind CSS</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={materialui} alt="" />
-          <p className="skill-item-title">Material UI</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={javascript} alt="" />
-          <p className="skill-item-title">JavaScript</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={react} alt="" />
-          <p className="skill-item-title">React.js</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={node} alt="" />
-          <p className="skill-item-title">Node.js</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={css} alt="" />
-          <p className="skill-item-title">Express.js</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={mongodb} alt="" />
-          <p className="skill-item-title">MongoDB</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={mysql} alt="" />
-          <p className="skill-item-title">MySQL</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={firebase} alt="" />
-          <p className="skill-item-title">Firebase</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={cpp} alt="" />
-          <p className="skill-item-title">C++</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={java} alt="" />
-          <p className="skill-item-title">Java</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={php} alt="" />
-          <p className="skill-item-title">PHP</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={git} alt="" />
-          <p className="skill-item-title">Git</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={npm} alt="" />
-          <p className="skill-item-title">NPM</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={postman} alt="" />
-          <p className="skill-item-title">Postman</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={androidstudio} alt="" />
-          <p className="skill-item-title">Android Studio</p>
-        </div>
-
-        {/* skill item */}
-        <div className="skill-item-container">
-          <img className="skill-item-icon" src={vscode} alt="" />
-          <p className="skill-item-title">VS Code</p>
-        </div>
+        {/* skill items */}
+        {skillItems.map((skill, index) => (
+          <div key={index} className="skill-item-container">
+            <img
+              className="skill-item-icon"
+              src={skill?.icon}
+              alt={skill?.title}
+            />
+            <p className="skill-item-title">{skill?.title}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
